@@ -18,3 +18,32 @@ html {
 .navigation-background {
     background: linear-gradient(to right, #17499a, #ba0eca);
 }
+
+.timeline {
+    position: relative;
+    max-width: 2000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2px 2fr; /* Adjust this line */
+    list-style: none;
+    width: min(60rem, 90%);
+    margin-inline: auto;
+}
+
+
+.timeline::before {
+    content: "";
+    grid-column: 2;
+    grid-row: 1 / span 20;
+    background: rgb(225, 225, 225);
+    border-radius: 1px;
+}
+
+.timeline-item {
+    grid-column: 3; /* Adjust this line */
+    margin-inline: 1.5rem;
+    grid-row: span 2;
+    margin-bottom: 15px;
+    display: grid;
+    grid-template-rows: min-content min-content min-content;
+}
