@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <!-- Load TailWindCSS -->
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+        <!-- Load FontsAwesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <!-- Load TypedJS-->
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+        <!-- Load AlpineJS -->
+        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v3.13.3/dist/alpine.min.js" defer></script>
+        <!-- Load custom css -->
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <!-- Load custom scripts -->
+        <script src="./js/experience.js"></script>
+        <script src="./js/professions.js"></script>
+        <script src="./js/techstack.js"></script>
+    </head>
+    <body>
+        <header class="p-4 bg-gray-500 text-white flex flex-col items-center space-y-4">
+            <nav id="menu" class="pr-4">
+                <ul class="flex flex-row space-x-4">
+                    <li><a href="#Projects" class="text-white hover:underline">Projects</a></li>
+                    <li><a href="#TechStack" class="text-white hover:underline">Tech Stack</a></li>
+                    <li><a href="#Experience" class="text-white hover:underline">Experience</a></li>
+                    <li><a href="#Contacts" class="text-white hover:underline">Contacts</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="flex flex-col md:flex-row">
+            <div class="w-3/4 bg-center bg-cover main-page">
+                <h2 class="text-2xl text-white">Hello, I'm Christofher! A Passionate <span id="typed"></span>👋</h2>
+            </div>
+            <div class="w-1/4 p-10">
+                <img src="img/me.jpg" class="object-contain w-96 h-96 rounded-full border-4 border-white">
+                <h2 class="text-xl font-bold mt-4">Christofher Arko Köst</h2>
+                <p class="mt-2"><i class="fas fa-envelope"></i> christofher.kost@gmail.com</p>
+                <p class="mt-2"><i class="fas fa-briefcase"></i> Site Reliability Engineer</p>
+                <p class="mt-2"><a href="https://github.com/LookinLabs" class="hover:underline"><i class="fa-solid fa-users"></i> LookinLabs</a></p>
+                <p class="mt-2"><a href="https://github.com/KostLinux" class="hover:underline"><i class="fab fa-github"></i> Github</a></p>
+            </div>
+        </div>
+        <div class="px-4">
+            <section id="Experience" class="mt-10">
+                <h1 class="text-2xl font-bold mb-5">Experience</h1>
+            </section>
+            <section id="Projects">
+                <h1 class="text-xl font-bold">Projects</h1>
+            </section>
+            <section id="TechStack" class="py-8">
+                <h1 class="text-2xl font-bold text-center">Tech Stack</h1>
+            </section>
+            <section id="Contacts">
+                <h1 class="text-xl font-bold">Contacts</h1>
+            </section>
+        </div>
+        <footer class="p-4 text-white text-center bg-gray-500">
+            <p>&copy; 2023 Christofher. All rights reserved.</p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.main-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #191673, #490707);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* gradient.css */
+.navigation-background {
+    background: linear-gradient(to right, #17499a, #ba0eca);
+}
