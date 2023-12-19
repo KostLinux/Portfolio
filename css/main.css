@@ -55,6 +55,7 @@ html {
 body {
     -webkit-text-size-adjust: 100%;
     scroll-padding-top: 80px; /* Adjust this value to match your navbar's height */
+    background: #111517
 }
 
 .experience-background {
