@@ -1,0 +1,117 @@
+[
+    {
+        "name": "HTML",
+        "icon": "https://img.icons8.com/color/48/000000/html-5--v1.png",
+        "group": "Web Development"
+    },
+    {
+        "name": "TailwindCSS",
+        "icon": "https://img.icons8.com/color/48/tailwind_css.png",
+        "group": "Web Development"
+    },
+    {
+        "name": "Javascript",
+        "icon": "https://img.icons8.com/color/48/000000/javascript--v1.png",
+        "group": "Web Development"
+    },
+    {
+        "name": "NodeJS",
+        "icon": "https://img.icons8.com/color/48/000000/nodejs.png",
+        "group": "Web Development"
+    },
+    {
+        "name": "CSS",
+        "icon": "https://img.icons8.com/color/48/000000/css3.png",
+        "group":"Web Development"
+    },
+    {
+        "name": "ExpressJS",
+        "icon": "https://img.icons8.com/color/48/express-js.png",
+        "group": "Web Development"
+    },
+    {
+        "name": "Go",
+        "icon": "https://img.icons8.com/color/48/000000/golang.png",
+        "group": "Software Development"
+    },
+    {
+        "name": "Java",
+        "icon": "https://img.icons8.com/color/48/000000/java-coffee-cup-logo--v1.png",
+        "group": "Software Development"
+    },
+    {
+        "name": "C#",
+        "icon": "https://img.icons8.com/color/48/c-sharp-logo.png",
+        "group": "Software Development"
+    },
+    {
+        "name": "AWS",
+        "icon": "https://img.icons8.com/color/48/000000/amazon-web-services.png",
+        "group": "CloudOps"
+    },
+    {
+        "name": "Terraform",
+        "group": "CloudOps",
+        "icon": "https://img.icons8.com/color/48/000000/terraform.png"
+    },
+    {
+        "name": "Ansible",
+        "group": "CloudOps",
+        "icon": "https://img.icons8.com/color/48/000000/ansible.png"
+    },
+    {
+        "name": "Github Actions",
+        "group": "CloudOps",
+        "icon": "https://img.icons8.com/color/48/000000/github--v1.png"
+    },
+    {
+        "name": "Gitlab CI",
+        "group": "CloudOps",
+        "icon": "https://img.icons8.com/color/48/000000/gitlab.png"
+    },
+    {
+        "name": "Kubernetes",
+        "group": "CloudOps",
+        "icon": "https://img.icons8.com/color/48/kubernetes.png"
+    },
+    {
+        "name": "Docker",
+        "group": "CloudOps",
+        "icon": "https://img.icons8.com/color/48/000000/docker.png"
+    },
+    {
+        "name": "Bash",
+        "group": "Scripting",
+        "icon": "https://img.icons8.com/plasticine/100/000000/bash.png"
+    },
+    {
+        "name": "Python",
+        "group": "Scripting",
+        "icon": "https://img.icons8.com/color/48/000000/python--v1.png"
+    },
+    {
+        "name": "PostgreSQL",
+        "group": "SQL",
+        "icon": "https://img.icons8.com/color/48/000000/postgreesql.png"
+    },
+    {
+        "name": "MySQL",
+        "group": "SQL",
+        "icon": "https://img.icons8.com/color/48/000000/mysql-logo.png"
+    },
+    {
+        "name": "MariaDB",
+        "group": "SQL",
+        "icon": "https://img.icons8.com/color/48/maria-db.png"
+    },
+    {
+        "name": "Redis",
+        "group": "Cache",
+        "icon": "https://img.icons8.com/color/48/000000/redis.png"
+    },
+    {
+        "name": "Postman",
+        "group": "API",
+        "icon": "https://img.icons8.com/color/48/000000/api-settings.png"
+    }
+]

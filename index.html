@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <!-- Load TailWindCSS -->
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+        <!-- Load FontsAwesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <!-- Load TypedJS-->
+        <script src="node_modules/typed.js/dist/typed.umd.js"></script>
+        <!-- Load AlpineJS -->
+        <script src="node_modules/alpinejs/dist/cdn.min.js" defer></script>
+        <!-- Load custom css -->
+        <link rel="stylesheet" type="text/css" href="./css/main.css">
+        <!-- Load custom scripts -->
+        <script src="./js/script.js"></script>
+    </head>
+    <body>
+    <!-- Navbar -->
+    <header id="header" class="p-4 bg-gray-500 text-white flex justify-between items-center overflow-auto">
+        <div>
+            <h1 class="text-xl">KostLinux</h1>
+        </div>
+        <nav id="menu" class="pr-4 mt-2 md:mt-0">
+            <ul class="flex flex-row space-x-4">
+                <li><a href="#About" class="text-white hover:underline">About Me</a></li>
+                <li><a href="#Experience" class="text-white hover:underline">Experience</a></li>
+                <li><a href="#Projects" class="text-white hover:underline">Projects</a></li>
+                <li><a href="#TechStack" class="text-white hover:underline">Tech Stack</a></li>
+                <li><a href="#Contacts" class="text-white hover:underline">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+        <!-- Main -->
+        <section id="Main">
+            <div class="relative flex flex-col md:flex-row bg-center bg-cover main-page overflow-auto">
+                <div class="p-20 absolute left-0 w-3/4 text-left"> 
+                    <h2 class="text-4xl text-white mb-2 md:mb-0">KostLinux, <span id="professions"></span></h2>
+                    <p class="text-white text-lg mt-4"><span id="welcomes"></span></p>
+                    <div class="mt-10 flex justify-center items-center"> 
+                        <a href="#Projects" class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-700">View Projects</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About me -->
+        <section id="About" class="pt-20 pb-20">
+            <div class="container mx-auto flex">  
+                <div class="w-3/4 p-10">
+                    <h2 class="text-4xl font-bold mb-10">About me</h2>
+                    <p class="mt-2">
+                        Hi! I'm Christofher, an passionate Site Reliability Engineer from Estonia. My username is KostLinux but you can call me just Chris. 
+                        KostLinux username came from the times when i was using Linux operating system and was facinated of using it. I was too lazy to changed it - so i kept it. 
+                        I am quite passionate about newer technologies and i'm always looking for new challenges. 
+                    </p>
+                    <p class="mt-2">
+                        I've started my IT career in 2017 and i didn't even
+                        know, that i will be working on IT. I thought, that IT is too hard for me, but i was wrong. I've started my career as a Cloud Engineer in Telia Estonia, after i've moved
+                        to TEHIK, where i've got the necessary fundamentals about automation and cloud computing. At the end of my career in TEHIK i was positioning as
+                        Senior Site Reliability Engineer and mainly was helping developers and platform engineers. TEHIK gave me a chance to get GitOps Certified and i've passed it.
+                    </p>
+                    <p class="mt-2">
+                        Right now i've downgraded to Site Reliability Engineer (lvl2) in LHV Insurance Company to get more experience in Cloud Computing and DevOps technologies such as
+                        AWS, Serverless, Agile Project management, software development and etc. 
+                        
+                    </p>
+                    <p class="mt-2">
+                        In free time i'm working on my own projects in organization of enthusiasts - LookinLabs.
+                        LookinLabs is organization based on Product As A Service, where we're developing our products but also helping our customers.
+                    </p>
+                </div>
+                <div class="w-1/4 p-10">
+                    <img src="assets/img/me.jpg" class="object-contain w-48 h-48 md:w-96 md:h-96 rounded-full border-4 border-white">
+                    <h2 class="text-xl font-bold mt-4">Christofher Arko Köst</h2>
+                    <p class="mt-2"><i class="fas fa-envelope"></i> christofher.kost@gmail.com</p>
+                    <p class="mt-2"><i class="fas fa-briefcase"></i> Site Reliability Engineer</p>
+                    <p class="mt-2"><a href="https://github.com/LookinLabs" class="hover:underline"><i class="fa-solid fa-users"></i> LookinLabs</a></p>
+                    <p class="mt-2"><a href="https://github.com/KostLinux" class="hover:underline"><i class="fab fa-github"></i> Github</a></p>
+                    <p class="mt-2"><a href="https://resume.io/r/TzjnkXV4h" class="hover:underline"><i class="fas fa-briefcase"></i> CV/Resume</a></p>
+                </div>
+            </div>
+        </section>
+        <!-- Experience -->
+        <section id="Experience" class="experience-background pt-10 pb-20">
+            <div class="container mx-auto px-4 custom-font-color">
+                <h1 class="text-4xl font-bold mb-20 text-center">Experience</h1>
+                <div id="experienceContent">
+                    <!-- Experience content will be inserted here by the JavaScript -->
+                </div>
+            </div>
+        </section>
+        <!-- Projects -->
+        <section id="Projects" class="pt-10 pb-20">
+            <div class="container mx-auto px-4">
+                <h1 class="text-4xl font-bold mb-20 text-center">Projects</h1>
+                <div id="projectCards" class="flex flex-wrap justify-center">
+                    <!-- Project cards will be inserted here by the JavaScript -->
+                </div>
+            </div>
+        </section>
+        <!-- Tech Stack -->
+        <section id="TechStack" class="pt-10 pb-20 experience-background">
+            <div class="container mx-auto px-4 custom-font-color">
+                <h1 class="text-3xl font-bold mb-5 text-center">Tech Stack</h1>
+                <p class="text-2xl text-center mb-20">Here you can familiarise the example Tech Stack i've used</p>
+                <hr class="border-t border-white mt-4 mb-4"> <!-- White horizontal line -->
+                <div id="techStack">
+                <!-- Tech Stack content goes here -->
+                </div>
+                <hr class="border-t border-white mt-4 mb-4"> <!-- White horizontal line -->
+            </div>
+        </section>
+        <!-- Contacts -->
+        <section id="Contacts" class="pt-10 pb-20">
+            <div class="container mx-auto px-4">
+                <h1 class="text-2xl font-bold text-center mb-2">Thanks for reading my portfolio!</h1>
+                <p class="text-xl text-center mb-2">Feel free to contact me!</p>
+                <div class="text-center">
+                    <p>Email: <a href="mailto:christofher.kost@gmail.com">christofher.kost@gmail.com</a></p>
+                    <p>Phone: <a href="tel:+37256865405">+37256865405</a></p>
+                    <p>
+                        <a href="https://github.com/KostLinux" target="_blank">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </p>
+                    <p>
+                        <a href="https://instagram.com/chris_velikij" target="_blank">
+                            <i class="fab fa-instagram"></i> Instagram
+                        </a>
+                    </p>
+                    <p>
+                        <a href="https://t.me/datqsoepall" target="_blank">
+                            <i class="fab fa-telegram"></i> Telegram
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer class="p-6 text-white text-center bg-gray-500">
+            <p>&copy; 2023 Christofher. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
