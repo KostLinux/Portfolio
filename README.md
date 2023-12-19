@@ -2,10 +2,16 @@
 
 # Getting Started
 
-1. Run Python HTTP Server
+1. Run Yarn install
+
+```
+yarn install
+```
+
+2. Setup HTTP Server
 
 ```
 python3 -m http.server
 ```
 
-2. Start developing
+3. Start developing

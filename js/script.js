@@ -3,37 +3,31 @@ window.addEventListener('load', function() {
     fetch('../config/techstack.json')
       .then(response => response.json())
       .then(data => {
-        const container = document.getElementById('TechStack');
+        const container = document.getElementById('techStack');
   
-        // Create a single table for the icons
-        const table = document.createElement('table');
-        table.className = 'mx-auto text-center'; // Center the table
+        // Create a div for the icons
+        const div = document.createElement('div');
+        div.className = 'grid grid-cols-4 gap-4'; // Use a 4-column grid with a gap of 1rem
   
-        const iconRow = document.createElement('tr');
-  
-        data.forEach(item => {
-          // Create a cell for each icon
-          const iconCell = document.createElement('td');
-          iconCell.className = 'px-2 py-1'; // Add some padding to the cells
+        data.forEach((item, index) => {
+          // Create a div for each icon
+          const iconDiv = document.createElement('div');
+          iconDiv.className = 'text-center px-10 py-4'; // Center the icon and add padding
   
           // Create an img element and set its src to the icon URL
           const icon = document.createElement('img');
           icon.src = item.icon;
-          icon.style.width = '48px'; // Set the width of the icon
-          icon.style.height = '48px'; // Set the height of the icon
+          icon.className = 'w-12 h-12 mx-auto'; // Use Tailwind CSS to set the width and height of the icon and center it
   
-          // Append the icon to the cell
-          iconCell.appendChild(icon);
+          // Append the icon to the div
+          iconDiv.appendChild(icon);
   
-          // Append the cell to the icon row
-          iconRow.appendChild(iconCell);
+          // Append the div to the main container
+          div.appendChild(iconDiv);
         });
   
-        // Append the row to the table
-        table.appendChild(iconRow);
-  
-        // Append the table to the main container
-        container.appendChild(table);
+        // Append the div to the main container
+        container.appendChild(div);
       })
       .catch(error => console.error(error));
 });
@@ -71,7 +65,7 @@ window.addEventListener('load', function() {
     fetch('../config/experience.json')
       .then(response => response.json())
       .then(data => {
-        const container = document.getElementById('Experience');
+        const container = document.getElementById('experienceContent');
         const timeline = document.createElement('ul');
         timeline.className = 'timeline';
   
@@ -122,7 +116,7 @@ window.addEventListener('load', function() {
             projectName.textContent = project.name;
             
             var projectImage = document.createElement('img');
-            projectImage.className = 'w-96 h-96 object-contain';
+            projectImage.className = 'w-96 h-96 object-cover';
             projectImage.src = project.picture;
             projectImage.alt = project.name;
 

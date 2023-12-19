@@ -48,15 +48,29 @@ html {
     grid-template-rows: min-content min-content min-content;
 }
 
+.title, .descr {
+    font-size: 20px;
+}
+
 body {
     -webkit-text-size-adjust: 100%;
 }
 
-.projects-background {
+.experience-background {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background: linear-gradient(to right, #676566, #D4C8BA);
+    background: linear-gradient(to right, #5a5859, #b1a08c);
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures the navbar is always on top */
+}
+
+.custom-font-color {
+    color: #f0f2df
 }
