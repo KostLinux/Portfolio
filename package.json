@@ -1,7 +1,0 @@
-{
-  "dependencies": {
-    "@glidejs/glide": "^3.6.0",
-    "alpinejs": "^3.13.3",
-    "typed.js": "^2.1.0"
-  }
-}

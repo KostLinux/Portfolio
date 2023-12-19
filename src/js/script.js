@@ -1,6 +1,6 @@
 // techStack
 window.addEventListener('load', function() {
-    fetch('../config/techstack.json')
+    fetch('./config/techstack.json')
       .then(response => response.json())
       .then(data => {
         const container = document.getElementById('techStack');
@@ -34,7 +34,7 @@ window.addEventListener('load', function() {
 
 // professions
 window.addEventListener('load', function() {
-    fetch('../config/professions.json')
+    fetch('./config/professions.json')
     .then(response => response.json())
     .then(professions => {
         new Typed('#professions', {
@@ -48,7 +48,7 @@ window.addEventListener('load', function() {
 
 // welcomes
 window.addEventListener('load', function() {
-    fetch('../config/welcomes.json')
+    fetch('./config/welcomes.json')
     .then(response => response.json())
     .then(welcomes => {
         new Typed('#welcomes', {
@@ -62,7 +62,7 @@ window.addEventListener('load', function() {
 
 // experience
 window.addEventListener('load', function() {
-    fetch('../config/experience.json')
+    fetch('./config/experience.json')
       .then(response => response.json())
       .then(data => {
         const container = document.getElementById('experienceContent');
@@ -98,7 +98,7 @@ window.addEventListener('load', function() {
 
 // projects
 window.addEventListener('load', function() {
-    fetch('../config/projects.json')
+    fetch('./config/projects.json')
       .then(response => response.json())
       .then(projects => {
         const container = document.querySelector('#projectCards');
