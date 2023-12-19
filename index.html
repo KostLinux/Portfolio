@@ -9,19 +9,20 @@
         <!-- Load FontsAwesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
         <!-- Load TypedJS-->
-        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+        <script src="node_modules/typed.js/dist/typed.umd.js"></script>
         <!-- Load AlpineJS -->
-        <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js" defer></script>
+        <script src="node_modules/alpinejs/dist/cdn.min.js" defer></script>
         <!-- Load custom css -->
-        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="./css/main.css">
         <!-- Load custom scripts -->
-        <script src="./js/experience.js"></script>
-        <script src="./js/professions.js"></script>
-        <script src="./js/techstack.js"></script>
+        <script src="./js/script.js"></script>
     </head>
     <body>
-        <header class="p-4 bg-gray-500 text-white flex flex-col items-center space-y-4">
-            <nav id="menu" class="pr-4">
+        <header class="p-4 bg-gray-500 text-white flex justify-between items-center overflow-auto">
+            <div>
+                <h1 class="text-xl">KostLinux</h1>
+            </div>
+            <nav id="menu" class="pr-4 mt-2 md:mt-0">
                 <ul class="flex flex-row space-x-4">
                     <li><a href="#Projects" class="text-white hover:underline">Projects</a></li>
                     <li><a href="#TechStack" class="text-white hover:underline">Tech Stack</a></li>
@@ -30,31 +31,51 @@
                 </ul>
             </nav>
         </header>
-        <div class="flex flex-col md:flex-row">
-            <div class="w-3/4 bg-center bg-cover main-page">
-                <h2 class="text-2xl text-white">Hello, I'm Christofher! A Passionate <span id="typed"></span>👋</h2>
+        <div class="relative flex flex-col md:flex-row bg-center bg-cover main-page overflow-auto">
+            <div class="p-20 absolute left-0 w-3/4 text-left"> 
+                <h2 class="text-4xl text-white mb-2 md:mb-0">KostLinux, <span id="professions"></span></h2>
+                <p class="text-white text-lg mt-4"><span id="welcomes"></span></p>
+                <div class="mt-10 flex justify-center items-center"> 
+                    <a href="#Projects" class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-700">View Projects</a>
+                </div>
+            </div>
+        </div>
+        <div class="flex">  
+            <div class="w-3/4 p-10">
+                <h2 class="text-4xl font-bold">About me</h2>
+                <p class="mt-2">
+                    Hi! I'm Christofher, an passionate Site Reliability Engineer from Estonia. You can call me KostLinux or Chris. KostLinux came long time ago
+                    from the times i was system administrator and was facinated of using linux / unix operating systems.
+                </p>
             </div>
             <div class="w-1/4 p-10">
-                <img src="img/me.jpg" class="object-contain w-96 h-96 rounded-full border-4 border-white">
+                <img src="assets/img/me.jpg" class="object-contain w-96 h-96 rounded-full border-4 border-white">
                 <h2 class="text-xl font-bold mt-4">Christofher Arko Köst</h2>
                 <p class="mt-2"><i class="fas fa-envelope"></i> christofher.kost@gmail.com</p>
                 <p class="mt-2"><i class="fas fa-briefcase"></i> Site Reliability Engineer</p>
                 <p class="mt-2"><a href="https://github.com/LookinLabs" class="hover:underline"><i class="fa-solid fa-users"></i> LookinLabs</a></p>
                 <p class="mt-2"><a href="https://github.com/KostLinux" class="hover:underline"><i class="fab fa-github"></i> Github</a></p>
+                <p class="mt-2"><a href="https://resume.io/r/TzjnkXV4h" class="hover:underline"><i class="fas fa-briefcase"></i> CV/Resume</a></p>
             </div>
         </div>
-        <div class="px-4">
-            <section id="Experience" class="mt-10">
-                <h1 class="text-2xl font-bold mb-5">Experience</h1>
+            <section id="Experience">
+                <div class="px-4">
+                    <h1 class="text-4xl font-bold mb-5 text-center">Experience</h1>
+                </div>
             </section>
-            <section id="Projects">
-                <h1 class="text-xl font-bold">Projects</h1>
+            <section id="Projects" class="projects-background">
+                <div class="px-4 w-full max-w-screen-xl mx-auto text-center">
+                    <h1 class="text-4xl font-bold mb-8 w-full">Projects</h1>
+                </div>
+                <div id="projectCards" class="px-4 w-full max-w-screen-xl mx-auto flex flex-wrap justify-center">
+                    <!-- Project cards will be inserted here by the JavaScript -->
+                </div>
             </section>
             <section id="TechStack" class="py-8">
-                <h1 class="text-2xl font-bold text-center">Tech Stack</h1>
+                <h1 class="text-4xl font-bold text-center">Tech Stack</h1>
             </section>
             <section id="Contacts">
-                <h1 class="text-xl font-bold">Contacts</h1>
+                <h1 class="text-4xl font-bold text-center">Contacts</h1>
             </section>
         </div>
         <footer class="p-4 text-white text-center bg-gray-500">

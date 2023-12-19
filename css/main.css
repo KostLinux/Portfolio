@@ -8,7 +8,7 @@ html {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(to right, #191673, #490707);
+    background-image: url('../assets/img/main.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -40,10 +40,23 @@ html {
 }
 
 .timeline-item {
-    grid-column: 3; /* Adjust this line */
+    grid-column: 3;
     margin-inline: 1.5rem;
     grid-row: span 2;
     margin-bottom: 15px;
     display: grid;
     grid-template-rows: min-content min-content min-content;
+}
+
+body {
+    -webkit-text-size-adjust: 100%;
+}
+
+.projects-background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #676566, #D4C8BA);
 }
