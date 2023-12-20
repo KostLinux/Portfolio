@@ -127,3 +127,54 @@ window.addEventListener('load', function() {
       })
       .catch(error => console.error(error));
 });
+
+// Navbar
+document.addEventListener('DOMContentLoaded', function() {
+  var menuButton = document.getElementById('menuButton');
+  var menu = document.getElementById('menu');
+
+  menuButton.addEventListener('click', function() {
+      menu.style.transition = 'all 0.3s ease-in-out';
+      menu.classList.toggle('max-h-0');
+      menu.classList.toggle('max-h-screen');
+      menu.classList.toggle('opacity-90');
+  });
+});
+
+// Navbar highlightning
+// Define an array of sections
+const sections = ['Main', 'About', 'Experience', 'Projects', 'TechStack', 'Contacts'];
+
+// Add the scroll event listener
+document.addEventListener('scroll', function() {
+    // Iterate over each section
+    sections.forEach(function(section) {
+        // Get the section element and the corresponding navigation items
+        const sectionElement = document.getElementById(section);
+        const navItems = document.querySelectorAll(`.${section.toLowerCase()}-nav-item`);
+
+        // Add or remove the 'active' class based on whether the section is in the viewport
+        navItems.forEach(function(navItem) {
+            if (isInViewport(sectionElement)) {
+                navItem.classList.add('active');
+            } else {
+                navItem.classList.remove('active');
+            }
+        });
+    });
+});
+
+function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    const buffer = 200; // Adjust this value as needed
+    return (
+        rect.top <= buffer &&
+        rect.top >= -buffer
+    );
+}
+
+window.addEventListener('load', function() {
+  setTimeout(function() {
+      document.getElementById('Loader').classList.add('hide-loader');
+  }, 750);
+});

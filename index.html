@@ -18,37 +18,58 @@
         <script src="./js/script.js"></script>
     </head>
     <body>
+    <!-- Loader -->
+    <section id="Loader" class="bg-blue-900 relative place-items-center grid h-screen w-screen gap-4">   
+        <div class="bg-blue-500 w-48 h-48  absolute animate-ping rounded-full delay-5s shadow-xl"></div>
+        <div class="bg-blue-400 w-32 h-32 absolute animate-ping rounded-full shadow-xl"></div>
+        <div class="bg-white w-24 h-24 absolute animate-pulse rounded-full shadow-xl"></div>
+        <svg xmlns="http://www.w3.org/2000/svg" class="text-blue-900 filter mix-blend-overlay h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M5.636 18.364a9 9 0 010-12.728m12.728 0a9 9 0 010 12.728m-9.9-2.829a5 5 0 010-7.07m7.072 0a5 5 0 010 7.07M13 12a1 1 0 11-2 0 1 1 0 012 0z" />
+        </svg>
+    </section>
     <!-- Navbar -->
-    <header id="header" class="p-4 bg-gray-500 text-white flex justify-between items-center overflow-auto">
-        <div>
-            <h1 class="text-xl">KostLinux</h1>
+    <header class="gradient-bg custom-font-color fixed w-full p-4 flex justify-between items-center z-50">
+        <div class="flex items-center">
+            <a href="https://github.com/KostLinux" target="_blank" class="flex items-center">
+                <i class="fab fa-github text-xl mr-2"></i>
+            </a>
+            <a class="text-xl" href="#Main">KostLinux Portfolio</a>
         </div>
-        <nav id="menu" class="pr-4 mt-2 md:mt-0">
-            <ul class="flex flex-row space-x-2 sm:space-x-4">
-                <li><a href="#About" class="text-white hover:underline">About Me</a></li>
-                <li><a href="#Experience" class="text-white hover:underline">Experience</a></li>
-                <li><a href="#Projects" class="text-white hover:underline">Projects</a></li>
-                <li><a href="#TechStack" class="text-white hover:underline">Tech Stack</a></li>
-                <li><a href="#Contacts" class="text-white hover:underline">Contacts</a></li>
-            </ul>
-        </nav>
+        <button id="menuButton" class="md:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6 text-white">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+        <div class="hidden md:flex space-x-4">
+            <a href="#Main" class="custom-font-color hover:underline main-nav-item">Home</a>
+            <a href="#About" class="custom-font-color hover:underline about-nav-item">About Me</a>
+            <a href="#Experience" class="custom-font-color hover:underline experience-nav-item">Experience</a>
+            <a href="#Projects" class="custom-font-color hover:underline projects-nav-item">Projects</a>
+            <a href="#TechStack" class="custom-font-color hover:underline techstack-nav-item">Tech Stack</a>
+            <a href="#Contacts" class="custom-font-color hover:underline contacts-nav-item">Contacts</a>
+        </div>
+        <div class="overflow-hidden transition-all ease-in-out absolute top-full left-0 gradient-bg custom-font-color w-full opacity-0 max-h-0 md:hidden" id="menu">
+            <a href="#Main" class="block p-4 custom-font-color hover:underline main-nav-item">Home</a>
+            <a href="#About" class="block p-4 custom-font-color hover:underline about-nav-item">About Me</a>
+            <a href="#Experience" class="block p-4 custom-font-color hover:underline experience-nav-item">Experience</a>
+            <a href="#Projects" class="block p-4 custom-font-color hover:underline projects-nav-item">Projects</a>
+            <a href="#TechStack" class="block p-4 custom-font-color hover:underline techstack-nav-item">Tech Stack</a>
+            <a href="#Contacts" class="block p-4 custom-font-color hover:underline contacts-nav-item">Contacts</a>
+        </div>
     </header>
         <!-- Main -->
         <section id="Main">
             <div class="relative flex flex-col md:flex-row bg-center bg-cover main-page overflow-auto">
-                <div class="p-4 sm:p-10 md:p-20 absolute left-0 w-3/4 text-left"> 
-                    <h2 class="text-4xl text-white mb-2 md:mb-0">KostLinux, <span id="professions"></span></h2>
-                    <p class="text-white text-lg mt-4"><span id="welcomes"></span></p>
-                    <div class="mt-10 flex justify-center items-center"> 
-                        <a href="#Projects" class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-700">View Projects</a>
-                    </div>
+                <div class="p-4 sm:p-10 md:p-20 absolute left-0 w-3/4 text-left grid grid-rows-3 items-center"> 
+                    <h2 class="text-4xl custom-font-color mb-2 md:mb-0 row-start-1">KostLinux, <span id="professions"></span></h2>
+                    <p class="custom-font-color text-lg mt-4 row-start-2"><span id="welcomes"></span></p>
                 </div>
             </div>
         </section>
         <!-- About me -->
         <section id="About" class="pt-20 pb-20">
             <div class="container mx-auto flex flex-wrap custom-font-color px-4 sm:px-10 md:px-20">  
-                <div class="w-3/4 p-10">
+                <div class="w-full sm:w-1/4 md:w-2/4 lg:w-3/4 p-10">
                     <h2 class="text-4xl font-bold mb-10">About me</h2>
                     <p class="mt-2">
                         Hi! I'm Christofher, an passionate Site Reliability Engineer from Estonia. My username is KostLinux but you can call me just Chris. 
@@ -71,9 +92,9 @@
                         LookinLabs is organization based on Product As A Service, where we're developing our products but also helping our customers.
                     </p>
                 </div>
-                <div class="w-full sm:w-1/2 md:w-1/4 p-10">
+                <div class="w-full sm:w-3/4 md:w-2/4 lg:w-1/4 p-10">
                     <img src="assets/img/me.jpg" class="object-cover w-24 h-24 sm:w-32 sm:h-32 md:w-64 md:h-64 lg:w-96 lg:h-96 xl:w-128 xl:h-128 rounded-full sm:border-2 md:border-4 lg:border-8 border-white">                    <p class="mt-2"><i class="fas fa-envelope"></i> christofher.kost@gmail.com</p>
-                    <p class="mt-2"><i class="fas fa-briefcase"></i> Site Reliability Engineer</p>
+                    <p class="mt-2"><i class="fas fa-briefcase"></i> Site Reliability Engineer at LHV</p>
                     <p class="mt-2"><a href="https://github.com/LookinLabs" class="hover:underline"><i class="fa-solid fa-users"></i> LookinLabs</a></p>
                     <p class="mt-2"><a href="https://github.com/KostLinux" class="hover:underline"><i class="fab fa-github"></i> Github</a></p>
                     <p class="mt-2"><a href="https://resume.io/r/TzjnkXV4h" class="hover:underline"><i class="fas fa-briefcase"></i> CV/Resume</a></p>
@@ -137,7 +158,7 @@
             </div>
         </section>
         <!-- Footer -->
-        <footer class="p-6 text-white text-center bg-gray-500">
+        <footer class="gradient-bg custom-font-color p-6 text-center">
             <p>&copy; 2023 Christofher. All rights reserved.</p>
         </footer>
     </body>
