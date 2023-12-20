@@ -93,3 +93,11 @@ body {
     max-width: 100%;
     box-sizing: border-box;
 }
+
+.active {
+    color: #c26b15; /* Change this to the color you want */
+}
+
+.gradient-bg {
+    background: #111517;
+}

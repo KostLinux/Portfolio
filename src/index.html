@@ -19,19 +19,29 @@
     </head>
     <body>
     <!-- Navbar -->
-    <header id="header" class="p-4 bg-gray-500 text-white flex justify-between items-center overflow-auto">
-        <div>
-            <h1 class="text-xl">KostLinux</h1>
+    <header class="gradient-bg custom-font-color fixed w-full p-4 flex justify-between items-center z-50">
+        <a class="text-xl" href="#Main">KostLinux</a>
+        <button id="menuButton" class="md:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6 text-white">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+        <div class="hidden md:flex space-x-4">
+            <a href="#Main" class="custom-font-color hover:underline main-nav-item">Home</a>
+            <a href="#About" class="custom-font-color hover:underline about-nav-item">About Me</a>
+            <a href="#Experience" class="custom-font-color hover:underline experience-nav-item">Experience</a>
+            <a href="#Projects" class="custom-font-color hover:underline projects-nav-item">Projects</a>
+            <a href="#TechStack" class="custom-font-color hover:underline techstack-nav-item">Tech Stack</a>
+            <a href="#Contacts" class="custom-font-color hover:underline contacts-nav-item">Contacts</a>
         </div>
-        <nav id="menu" class="pr-4 mt-2 md:mt-0">
-            <ul class="flex flex-row space-x-2 sm:space-x-4">
-                <li><a href="#About" class="text-white hover:underline">About Me</a></li>
-                <li><a href="#Experience" class="text-white hover:underline">Experience</a></li>
-                <li><a href="#Projects" class="text-white hover:underline">Projects</a></li>
-                <li><a href="#TechStack" class="text-white hover:underline">Tech Stack</a></li>
-                <li><a href="#Contacts" class="text-white hover:underline">Contacts</a></li>
-            </ul>
-        </nav>
+        <div class="overflow-hidden transition-all ease-in-out absolute top-full left-0 gradient-bg custom-font-color w-full opacity-0 max-h-0 md:hidden" id="menu">
+            <a href="#Main" class="block p-4 custom-font-color hover:underline main-nav-item">Home</a>
+            <a href="#About" class="block p-4 custom-font-color hover:underline about-nav-item">About Me</a>
+            <a href="#Experience" class="block p-4 custom-font-color hover:underline experience-nav-item">Experience</a>
+            <a href="#Projects" class="block p-4 custom-font-color hover:underline projects-nav-item">Projects</a>
+            <a href="#TechStack" class="block p-4 custom-font-color hover:underline techstack-nav-item">Tech Stack</a>
+            <a href="#Contacts" class="block p-4 custom-font-color hover:underline contacts-nav-item">Contacts</a>
+        </div>
     </header>
         <!-- Main -->
         <section id="Main">
@@ -48,7 +58,7 @@
         <!-- About me -->
         <section id="About" class="pt-20 pb-20">
             <div class="container mx-auto flex flex-wrap custom-font-color px-4 sm:px-10 md:px-20">  
-                <div class="w-3/4 p-10">
+                <div class="w-full sm:w-3/4 p-10">
                     <h2 class="text-4xl font-bold mb-10">About me</h2>
                     <p class="mt-2">
                         Hi! I'm Christofher, an passionate Site Reliability Engineer from Estonia. My username is KostLinux but you can call me just Chris. 
@@ -71,7 +81,7 @@
                         LookinLabs is organization based on Product As A Service, where we're developing our products but also helping our customers.
                     </p>
                 </div>
-                <div class="w-full sm:w-1/2 md:w-1/4 p-10">
+                <div class="w-full sm:w-1/4 p-10">
                     <img src="assets/img/me.jpg" class="object-cover w-24 h-24 sm:w-32 sm:h-32 md:w-64 md:h-64 lg:w-96 lg:h-96 xl:w-128 xl:h-128 rounded-full sm:border-2 md:border-4 lg:border-8 border-white">                    <p class="mt-2"><i class="fas fa-envelope"></i> christofher.kost@gmail.com</p>
                     <p class="mt-2"><i class="fas fa-briefcase"></i> Site Reliability Engineer</p>
                     <p class="mt-2"><a href="https://github.com/LookinLabs" class="hover:underline"><i class="fa-solid fa-users"></i> LookinLabs</a></p>
@@ -137,7 +147,7 @@
             </div>
         </section>
         <!-- Footer -->
-        <footer class="p-6 text-white text-center bg-gray-500">
+        <footer class="gradient-bg custom-font-color p-6 text-center">
             <p>&copy; 2023 Christofher. All rights reserved.</p>
         </footer>
     </body>
