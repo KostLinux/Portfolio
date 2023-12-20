@@ -55,7 +55,7 @@ html {
 body {
     -webkit-text-size-adjust: 100%;
     scroll-padding-top: 80px; /* Adjust this value to match your navbar's height */
-    background: #111517
+    background: #111517;
 }
 
 .experience-background {
@@ -74,5 +74,22 @@ body {
 }
 
 .custom-font-color {
-    color: #f0f2df
+    color: #d9dbc8
+}
+
+@media only screen and (max-width: 600px) {
+    .techstack-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    .techstack-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.container {
+    max-width: 100%;
+    box-sizing: border-box;
 }
