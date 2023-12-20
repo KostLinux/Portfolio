@@ -101,3 +101,7 @@ body {
 .gradient-bg {
     background: #111517;
 }
+/* Loader */
+#Loader.hide-loader {
+    display: none;
+}

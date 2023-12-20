@@ -165,10 +165,16 @@ document.addEventListener('scroll', function() {
 });
 
 function isInViewport(element) {
-  const rect = element.getBoundingClientRect();
-  const buffer = 200; // Adjust this value as needed
-  return (
-      rect.top <= buffer &&
-      rect.top >= -buffer
-  );
+    const rect = element.getBoundingClientRect();
+    const buffer = 200; // Adjust this value as needed
+    return (
+        rect.top <= buffer &&
+        rect.top >= -buffer
+    );
 }
+
+window.addEventListener('load', function() {
+  setTimeout(function() {
+      document.getElementById('Loader').classList.add('hide-loader');
+  }, 750);
+});
