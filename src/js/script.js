@@ -1,37 +1,36 @@
 // techStack
 window.addEventListener('load', function() {
-    fetch('./config/techstack.json')
-      .then(response => response.json())
-      .then(data => {
-        const container = document.getElementById('techStack');
-  
-        // Create a div for the icons
-        const div = document.createElement('div');
-        div.className = 'grid grid-cols-4 gap-4'; // Use a 4-column grid with a gap of 1rem
-  
-        data.forEach((item, index) => {
-          // Create a div for each icon
-          const iconDiv = document.createElement('div');
-          iconDiv.className = 'text-center px-10 py-4'; // Center the icon and add padding
-  
-          // Create an img element and set its src to the icon URL
-          const icon = document.createElement('img');
-          icon.src = item.icon;
-          icon.className = 'w-12 h-12 mx-auto'; // Use Tailwind CSS to set the width and height of the icon and center it
-  
-          // Append the icon to the div
-          iconDiv.appendChild(icon);
-  
-          // Append the div to the main container
-          div.appendChild(iconDiv);
-        });
-  
-        // Append the div to the main container
-        container.appendChild(div);
-      })
-      .catch(error => console.error(error));
-});
+  fetch('./config/techstack.json')
+    .then(response => response.json())
+    .then(data => {
+      const container = document.getElementById('techStack');
 
+      // Create a div for the icons
+      const div = document.createElement('div');
+      div.className = 'techstack-grid gap-4'; // Use a responsive grid with a gap of 1rem
+
+      data.forEach((item, index) => {
+        // Create a div for each icon
+        const iconDiv = document.createElement('div');
+        iconDiv.className = 'text-center px-10 py-4'; // Center the icon and add padding
+
+        // Create an img element and set its src to the icon URL
+        const icon = document.createElement('img');
+        icon.src = item.icon;
+        icon.className = 'w-12 h-12 mx-auto'; // Use Tailwind CSS to set the width and height of the icon and center it
+
+        // Append the icon to the div
+        iconDiv.appendChild(icon);
+
+        // Append the div to the main container
+        div.appendChild(iconDiv);
+      });
+
+      // Append the div to the main container
+      container.appendChild(div);
+    })
+    .catch(error => console.error(error));
+});
 // professions
 window.addEventListener('load', function() {
     fetch('./config/professions.json')
