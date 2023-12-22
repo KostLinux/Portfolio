@@ -77,18 +77,27 @@ body {
     color: #d9dbc8
 }
 
+.techstack-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
 @media only screen and (max-width: 600px) {
     .techstack-grid {
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
     }
 }
 
 @media only screen and (min-width: 601px) {
     .techstack-grid {
+        display: grid;
         grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
     }
 }
-
 .container {
     max-width: 100%;
     box-sizing: border-box;
@@ -104,4 +113,10 @@ body {
 /* Loader */
 #Loader.hide-loader {
     display: none;
+}
+
+#Contacts a {
+    position: relative;
+    z-index: 1;
+    pointer-events: auto;
 }
