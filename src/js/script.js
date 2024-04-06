@@ -139,6 +139,19 @@ document.addEventListener('DOMContentLoaded', function() {
       menu.classList.toggle('max-h-screen');
       menu.classList.toggle('opacity-90');
   });
+
+  // Close the menu when a navigation item is clicked
+  const sections = ['Main', 'About', 'Experience', 'Projects', 'TechStack', 'Consultancy', 'Contacts'];
+  sections.forEach(function(section) {
+      const navItems = document.querySelectorAll(`.${section.toLowerCase()}-nav-item`);
+      navItems.forEach(function(navItem) {
+          navItem.addEventListener('click', function() {
+              menu.classList.add('max-h-0');
+              menu.classList.remove('max-h-screen');
+              menu.classList.remove('opacity-90');
+          });
+      });
+  });
 });
 
 // Navbar highlightning
