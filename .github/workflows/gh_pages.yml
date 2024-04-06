@@ -17,3 +17,4 @@ jobs:
           github_token: ${{ secrets.API_TOKEN }}
           publish_dir: ./src
           commit_message: ${{ github.event.head_commit.message }}
+          cname: christofherkost.org
