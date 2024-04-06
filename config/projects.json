@@ -1,27 +1,27 @@
 [
     {
-        "name": "Terraform Markdown Docs Generator (tfdocs)",
-        "repo": "https://github.com/LookinLabs/tfdocs",
-        "picture": "./assets/img/tfdocs.png"
+        "name": "LookinLabs Website",
+        "repo": "https://lookinlabs.com",
+        "picture": "./assets/img/projects/lookinlabs.png"
+    },
+    {
+        "name": "Christofher Portfolio",
+        "repo": "https://christofherkost.org",
+        "picture": "./assets/img/projects/portfolio.png"
+    },
+    {
+        "name": "Go Skeleton Web Application",
+        "repo": "https://github.com/KostLinux/skeleton-go-web-app",
+        "picture": "./assets/img/projects/skeleton-go-web.png"
     },
     {
         "name": "Digital Service Book",
         "repo": "https://github.com/LookinLabs/DSB",
-        "picture": "./assets/img/dsb.png"
+        "picture": "./assets/img/projects/dsb.png"
     },
     {
-        "name": "Travelis",
-        "repo": "https://github.com/LookinLabs/Travelis-Frontend",
-        "picture": "./assets/img/travelis.png"
-    },
-    {
-        "name": "LookinLabs Website",
-        "repo": "https://github.com/LookinLabs/LookinLabs-Web",
-        "picture": "./assets/img/lookinlabs.jpg"
-    },
-    {
-        "name": "KostLinux Portfolio",
-        "repo": "https://github.com/KostLinux/Portfolio",
-        "picture": "https://kostlinux.github.io/Portfolio/assets/img/main.jpg"
+        "name": "Eden",
+        "repo": "https://github.com/KostLinux/Eden",
+        "picture": "./assets/img/projects/eden.png"
     }
 ]

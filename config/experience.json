@@ -12,13 +12,13 @@
         "description": "Maintaining AWS managed / Serverless services, built application delivery architecture from scratch via Github Actions"
     },
     {
-        "title": "Site Reliability Engineer",
+        "title": "Senior Site Reliability Engineer",
         "company": "Estonian Health And Welfare Informations Centre",
         "duration": "Feb 2023 - Okt 2023",
         "description": "Responsible for observability, security and encryption of kubernetes clusters, bringed to house ArgoCD as an CD tool, developed disaster recovery"
     },
     {
-        "title": "Platform / DevOps Engineer",
+        "title": "Platform Engineer",
         "company":"Estonian Health And Welfare Informations Centre",
         "duration": "Jun 2021 - Feb 2023",
         "description": "Mainly helped out developers, managed huge kubernetes clusters, artifactory and gitlab pipelines"

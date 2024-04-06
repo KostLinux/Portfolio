@@ -115,7 +115,7 @@ window.addEventListener('load', function() {
             projectName.textContent = project.name;
             
             var projectImage = document.createElement('img');
-            projectImage.className = 'w-96 h-96 object-cover';
+            projectImage.className = 'h-48 object-cover';
             projectImage.src = project.picture;
             projectImage.alt = project.name;
 
@@ -143,7 +143,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Navbar highlightning
 // Define an array of sections
-const sections = ['Main', 'About', 'Experience', 'Projects', 'TechStack', 'Contacts'];
+const sections = ['Main', 'About', 'Experience', 'Projects', 'TechStack', 'Consultancy', 'Contacts'];
 
 // Add the scroll event listener
 document.addEventListener('scroll', function() {

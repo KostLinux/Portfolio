@@ -3,15 +3,17 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfolio</title>
+        <title>Christofher Portfolio</title>
+        <!-- CryptoCurrency -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/monzanifabio/cryptofont/cryptofont.css">
         <!-- Load TailWindCSS -->
-        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
         <!-- Load FontsAwesome -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
         <!-- Load TypedJS-->
-        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
         <!-- Load AlpineJS -->
-        <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.8/dist/cdn.min.js" defer></script>
         <!-- Load custom css -->
         <link rel="stylesheet" type="text/css" href="./css/main.css">
         <!-- Load custom scripts -->
@@ -33,7 +35,7 @@
             <a href="https://github.com/KostLinux" target="_blank" class="flex items-center">
                 <i class="fab fa-github text-xl mr-2"></i>
             </a>
-            <a class="text-xl" href="#Main">KostLinux Portfolio</a>
+            <a class="text-xl" href="#Main">Christofher Portfolio</a>
         </div>
         <button id="menuButton" class="md:hidden">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6 text-white">
@@ -42,19 +44,19 @@
         </button>
         <div class="hidden md:flex space-x-4">
             <a href="#Main" class="custom-font-color hover:underline main-nav-item">Home</a>
-            <a href="#About" class="custom-font-color hover:underline about-nav-item">About Me</a>
+            <a href="#About" class="custom-font-color hover:underline about-nav-item">About</a>
             <a href="#Experience" class="custom-font-color hover:underline experience-nav-item">Experience</a>
             <a href="#Projects" class="custom-font-color hover:underline projects-nav-item">Projects</a>
             <a href="#TechStack" class="custom-font-color hover:underline techstack-nav-item">Tech Stack</a>
-            <a href="#Contacts" class="custom-font-color hover:underline contacts-nav-item">Contacts</a>
+            <a href="#Consultancy" class="custom-font-color hover:underline consultancy-nav-item">Consultancy</a>
         </div>
         <div class="overflow-hidden transition-all ease-in-out absolute top-full left-0 gradient-bg custom-font-color w-full opacity-0 max-h-0 md:hidden" id="menu">
             <a href="#Main" class="block p-4 custom-font-color hover:underline main-nav-item">Home</a>
-            <a href="#About" class="block p-4 custom-font-color hover:underline about-nav-item">About Me</a>
+            <a href="#About" class="block p-4 custom-font-color hover:underline about-nav-item">About</a>
             <a href="#Experience" class="block p-4 custom-font-color hover:underline experience-nav-item">Experience</a>
             <a href="#Projects" class="block p-4 custom-font-color hover:underline projects-nav-item">Projects</a>
             <a href="#TechStack" class="block p-4 custom-font-color hover:underline techstack-nav-item">Tech Stack</a>
-            <a href="#Contacts" class="block p-4 custom-font-color hover:underline contacts-nav-item">Contacts</a>
+            <a href="#Consultancy" class="block p-4 custom-font-color hover:underline consultancy-nav-item">Consultancy</a>
         </div>
     </header>
         <!-- Main -->
@@ -71,25 +73,52 @@
             <div class="container mx-auto flex flex-wrap custom-font-color px-4 sm:px-10 md:px-20">  
                 <div class="w-full sm:w-1/4 md:w-2/4 lg:w-3/4 p-10">
                     <h2 class="text-4xl font-bold mb-10">About me</h2>
+                    <h3 class="text-2xl font-bold mb-5">🔍 Who i am?</h3>
                     <p class="mt-2">
-                        Hi! I'm Christofher, an passionate & certified Site Reliability Engineer from Estonia. My username is KostLinux but you can call me just Chris. 
-                        KostLinux username came from the times when i was using Linux operating system and was facinated of using it. I was too lazy to changed it - so i kept it. 
-                        I am quite passionate about newer technologies and i'm always looking for new challenges. 
+                        Greetings and welcome! I'm Christofher, a passionate certified Site Reliability Engineer and enthusiast of AWS
+                        Serverless services.
+                        I navigate the world of IT with enthusiasm, crafting seamless solutions using tools like CDKs, Go, Terraform, AWS, and
+                        occasionally Ansible.
+                        I particularly enjoy leveraging AWS Native services and tools like CDKs, Go, Terraform, and occasionally Ansible to
+                        create seamless solutions.
+                        Automation is my go-to approach, as it speeds up tasks and boosts efficiency.
                     </p>
+                    <h3 class="text-2xl font-bold mb-5 mt-10">📚 Self-Development</h3>
                     <p class="mt-2">
-                        I've started my IT career in 2017 and i didn't even
-                        know, that i will be working on IT. I thought, that IT is too hard for me, but i was wrong. I've started my career as a Cloud Engineer in Telia Estonia, after i've moved
-                        to TEHIK, where i've got the necessary fundamentals about automation and cloud computing. At the end of my career in TEHIK i was positioning as
-                        Senior Site Reliability Engineer and mainly was helping developers and platform engineers. TEHIK gave me a chance to get GitOps Certified and i've passed it.
+                        In my spare time, I am busy learning programming in Go, contributing to open-source projects like "Gin-Gonic" or
+                        "Web-Check by Lissy," and investing in the cryptocurrency world and stocks. Currently, I am working on a project
+                        called "skeleton-web-go-app," which is a template for web applications written in Go, inspired by Goravel (a Laravel
+                        fork for Go), Express NodeJS, Beego, PHP Laravel, etc. The uniqueness of this project lies in its high performance,
+                        self-readable, and easy-to-maintain code. Additionally, I am the CEO of an organization called LookinLabs
+                        (lookinlabs.com), which is a web development company primarily created for self-development purposes.
                     </p>
+                    <h3 class="text-2xl font-bold mb-5 mt-10">🚀 Consultancy Services</h3>
                     <p class="mt-2">
-                        Right now i've downgraded to Site Reliability Engineer (lvl2) in LHV Insurance Company to get more experience in Cloud Computing and DevOps technologies such as
-                        AWS, Serverless, Agile Project management, software development and etc. 
-                        
+                        I'm open to challenges and opportunities, so feel free to contact me for IT consultancy services. It doesn't matter
+                        which topic you have in mind, whether it's about hosting a website somewhere, making decisions about moving your
+                        infrastructure from on-premises to the cloud, or selecting the right programming language for your project.
+                        Additionally, when it comes to AWS and on-premises solutions, I'm available to provide engineering services such as
+                        setting up infrastructure from scratch in an infra-as-code manner, or improving existing infrastructure. I want to
+                        emphasize that I prioritize finding the most cost-efficient solutions possible for your company. Remember, there are no
+                        impossible tasks, only tasks that need to be solved.
                     </p>
+                    <h3 class="text-2xl font-bold mb-5 mt-10">🏆 Experience &amp; Achievements</h3>
                     <p class="mt-2">
-                        In free time i'm working on my own projects in organization of enthusiasts - LookinLabs.
-                        LookinLabs is organization based on Product As A Service, where we're developing our products but also helping our customers.
+                        My journey in IT started when I was 18 years old as a simple system administrator.
+                        In 5 years, I moved from system administrator to Senior Site Reliability Engineer.
+                        Behind the scenes, I did a lot of work, built many projects, learned
+                        a lot of things, failed numerous times, but never gave up. So, one of my proudest accomplishments was transitioning
+                        seven on-premise Kubernetes clusters from manual setups to fully automated, cloud-compatible systems in just four
+                        months. It was a significant undertaking, but I successfully executed it!
+                        </p>
+                        <h3 class="text-2xl font-bold mb-5 mt-10">🌟 Opinion About Success</h3>
+                        <p class="mt-2">
+                            My experience has shown me that the best way to learn is through discipline.
+                            When faced with numerous failures, one should not surrender, but rather examine the situation from
+                            a different perspective and deduce accordingly. There's nothing that's impossible;
+                            you just need to find the right approach to solve the problem. Good examples of this are
+                            startup unicorns like Bolt, OpenAI, Figure, and Wallester. They encountered many failures, underwent multiple logo
+                            and company name changes, but ultimately found the path to success.
                     </p>
                 </div>
                 <div class="w-full sm:w-3/4 md:w-2/4 lg:w-1/4 p-10">
@@ -115,7 +144,7 @@
             </div>
         </section>
         <!-- Experience -->
-        <section id="Experience" class="experience-background pt-28 pb-20">
+        <section id="Experience" class="pt-28 pb-20 experience-background">
             <div class="container mx-auto px-4 sm:px-10 md:px-20 custom-font-color">
                 <h1 class="text-4xl font-bold mb-20 text-center">Experience</h1>
                 <div id="experienceContent">
@@ -133,32 +162,106 @@
             </div>
         </section>
         <!-- Tech Stack -->
-        <section id="TechStack" class="pt-28 pb-20 experience-background">
+        <section id="TechStack" class="experience-background pb-20 pt-28">
             <div class="container mx-auto px-4 sm:px-10 md:px-20 custom-font-color">
                 <h1 class="text-3xl font-bold mb-5 text-center">Tech Stack</h1>
                 <p class="text-2xl text-center mb-20">Here you can familiarise the main tech stack i'm familiar with</p>
-                <hr class="border-t border-white mt-4 mb-4"> <!-- White horizontal line -->
+                <hr class="border-t border-white mt-4 mb-4">
                 <div id="techStack">
-                <!-- Tech Stack content goes here -->
+                    <!-- Tech Stack content goes here -->
                 </div>
-                <hr class="border-t border-white mt-4 mb-4"> <!-- White horizontal line -->
+                <hr class="border-t border-white mt-4 mb-4">
             </div>
         </section>
-        <!-- Contacts -->
-        <section id="Contacts" class="pt-28 pb-20">
+        <!-- Consultancy Services -->
+        <section id="Consultancy" class="pt-48 pb-32">
             <div class="container mx-auto px-4 sm:px-10 md:px-20 custom-font-color">
-                <h1 class="text-2xl font-bold text-center mb-2">Thanks for reading my portfolio!</h1>
-                <p class="text-xl text-center mb-2">Feel free to contact me!</p>
-                <div class="text-center">
-                    <a href="mailto:christofher.kost@gmail.com"><i class="fas fa-envelope"></i></a>
-                    <a href="https://www.linkedin.com/in/christofher-kost-04b9791a2/"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/KostLinux"><i class="fab fa-github"></i></a>
+                <h1 class="text-4xl font-bold mb-10 text-center">Consultancy</h1>
+                <p class="font-light custom-font-color text-xl text-center mb-3">
+                    I offer high-quality consultancy services at a surprisingly affordable price.
+                </p>
+                <p class="font-light custom-font-color text-xl text-center mb-10">
+                    The price remains constant and does not fluctuate.
+                </p>
+                <div class="max-w-sm mx-auto rounded-xl shadow-md overflow-hidden experience-background">
+                    <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900">
+                        <h2 class="mb-4 text-2xl font-semibold custom-font-color">DevOps Consultancy</h2>
+                        <h2 class="mb-4 text-2xl font-semibold custom-font-color">$35 / per hour</h2>
+                        <hr class="border-t border-white mt-4">
+                        <ul role="list" class="mt-4 mb-8 space-y-4 text-center custom-font-color">
+                            <li class="flex items-center space-x-3">
+                                <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                                <span>Support 9AM - 9PM on Workdays</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                                <span>Quick Response</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                                <span>Solution Research</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                                <span>Engineering Services</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                                <span>Huge discount via cryptocurrency</span>
+                            </li>
+                        </ul>
+                        <div class="custom-font-color">
+                            <p class="text-xl">Feel free to contact me via</p>
+                            <a href="https://www.linkedin.com/in/christofher-kost-04b9791a2/" target="_blank">
+                                <i class="text-xl fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://t.me/datqsoepall" target="_blank">
+                                <i class="text-xl fab fa-telegram-plane"></i>
+                            </a>
+                            <a href="mailto:christofher.kost@gmail.com">
+                                <i class="text-xl fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
+                <p class="text-xl font-light custom-font-color text-center mt-10">
+                    Payments via <i class="cf cf-usdt"></i> (Tether USDT) cryptocurrency will grant you a 30% discount.
+                </p>
             </div>
         </section>
         <!-- Footer -->
-        <footer class="gradient-bg custom-font-color p-6 text-center">
-            <p>&copy; 2023 Christofher. All rights reserved.</p>
+        <footer class="bottom-0 custom-font-color p-6 text-center experience-background">
+            <section id="footer" class="pt-16">
+                <div class="container mx-auto px-4 sm:px-10 md:px-20 custom-font-color">
+                    <h1 class="text-2xl font-bold text-center mb-10">Thanks for reading my portfolio!</h1>
+                </div>
+            </section>
+            <p>&copy; 2024 Christofher. All rights reserved.</p>
         </footer>
     </body>
 </html>
