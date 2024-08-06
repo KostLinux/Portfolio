@@ -7,8 +7,14 @@
     },
     {
         "title": "Site Reliability Engineer",
+        "company": "CARIAD",
+        "duration": "May 2024 - Present",
+        "description": "Managing mostly NewRelic + Azure platform"
+    },
+    {
+        "title": "Site Reliability Engineer",
         "company": "LHV Insurance Company",
-        "duration": "Okt 2023 - Present",
+        "duration": "Okt 2023 - May 2024",
         "description": "Maintaining AWS managed / Serverless services, built application delivery architecture from scratch via Github Actions"
     },
     {
