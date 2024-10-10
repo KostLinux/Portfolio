@@ -1,36 +1,4 @@
-// techStack
-window.addEventListener('load', function() {
-  fetch('./config/techstack.json')
-    .then(response => response.json())
-    .then(data => {
-      const container = document.getElementById('techStack');
 
-      // Create a div for the icons
-      const div = document.createElement('div');
-      div.className = 'techstack-grid gap-4'; // Use a responsive grid with a gap of 1rem
-
-      data.forEach((item, index) => {
-        // Create a div for each icon
-        const iconDiv = document.createElement('div');
-        iconDiv.className = 'text-center px-10 py-4'; // Center the icon and add padding
-
-        // Create an img element and set its src to the icon URL
-        const icon = document.createElement('img');
-        icon.src = item.icon;
-        icon.className = 'w-12 h-12 mx-auto'; // Use Tailwind CSS to set the width and height of the icon and center it
-
-        // Append the icon to the div
-        iconDiv.appendChild(icon);
-
-        // Append the div to the main container
-        div.appendChild(iconDiv);
-      });
-
-      // Append the div to the main container
-      container.appendChild(div);
-    })
-    .catch(error => console.error(error));
-});
 // professions
 window.addEventListener('load', function() {
     fetch('./config/professions.json')
@@ -95,39 +63,6 @@ window.addEventListener('load', function() {
       });
 });
 
-// projects
-window.addEventListener('load', function() {
-    fetch('./config/projects.json')
-      .then(response => response.json())
-      .then(projects => {
-        const container = document.querySelector('#projectCards');
-
-        projects.forEach(function(project) {
-            var projectCard = document.createElement('div');
-            projectCard.className = 'w-full md:w-1/2 lg:w-1/3 p-4';
-
-            var projectLink = document.createElement('a');
-            projectLink.href = project.repo;
-            projectLink.target = '_blank';
-
-            var projectName = document.createElement('h3');
-            projectName.className = 'font-bold';
-            projectName.textContent = project.name;
-            
-            var projectImage = document.createElement('img');
-            projectImage.className = 'h-48 object-cover';
-            projectImage.src = project.picture;
-            projectImage.alt = project.name;
-
-            projectLink.appendChild(projectImage);
-            projectLink.appendChild(projectName);
-            projectCard.appendChild(projectLink);
-            container.appendChild(projectCard);
-        });
-      })
-      .catch(error => console.error(error));
-});
-
 // Navbar
 document.addEventListener('DOMContentLoaded', function() {
   var menuButton = document.getElementById('menuButton');
@@ -141,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   // Close the menu when a navigation item is clicked
-  const sections = ['Main', 'About', 'Experience', 'Projects', 'TechStack', 'Consultancy', 'Contacts'];
+  const sections = ['Main', 'About', 'Experience', 'Skills'];
   sections.forEach(function(section) {
       const navItems = document.querySelectorAll(`.${section.toLowerCase()}-nav-item`);
       navItems.forEach(function(navItem) {
@@ -156,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Navbar highlightning
 // Define an array of sections
-const sections = ['Main', 'About', 'Experience', 'Projects', 'TechStack', 'Consultancy', 'Contacts'];
+const sections = ['Main', 'About', 'Experience', 'Skills'];
 
 // Add the scroll event listener
 document.addEventListener('scroll', function() {
