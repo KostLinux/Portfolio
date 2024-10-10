@@ -41,16 +41,14 @@
         <div class="hidden md:flex space-x-4">
             <a href="#Main" class="custom-font-color hover:underline main-nav-item">Home</a>
             <a href="#About" class="custom-font-color hover:underline about-nav-item">About</a>
+            <a href="#Skills" class="custom-font-color hover:underline skills-nav-item">Skills</a>
             <a href="#Experience" class="custom-font-color hover:underline experience-nav-item">Experience</a>
-            <a href="#Projects" class="custom-font-color hover:underline projects-nav-item">Projects</a>
-            <a href="#TechStack" class="custom-font-color hover:underline techstack-nav-item">Tech Stack</a>
         </div>
         <div class="overflow-hidden transition-all ease-in-out absolute top-full left-0 gradient-bg custom-font-color w-full opacity-0 max-h-0 md:hidden" id="menu">
             <a href="#Main" class="block p-4 custom-font-color hover:underline main-nav-item">Home</a>
             <a href="#About" class="block p-4 custom-font-color hover:underline about-nav-item">About</a>
+            <a href="#Skills" class="block p-4 custom-font-color hover:underline skills-nav-item">Skills</a>
             <a href="#Experience" class="block p-4 custom-font-color hover:underline experience-nav-item">Experience</a>
-            <a href="#Projects" class="block p-4 custom-font-color hover:underline projects-nav-item">Projects</a>
-            <a href="#TechStack" class="block p-4 custom-font-color hover:underline techstack-nav-item">Tech Stack</a>
         </div>
     </header>
         <!-- Main -->
@@ -132,34 +130,62 @@
                 </div>
             </div>
         </section>
+        <section id="Skills" class="pt-28 pb-20">
+            <div class="container mx-auto px-4 sm:px-10 md:px-20 custom-font-color">
+                <h1 class="text-4xl font-bold mb-20 text-center">Skills</h1>
+                <div class="flex flex-wrap justify-center">
+                    <!-- SRE and DevOps -->
+                    <div class="w-full sm:w-1/2 lg:w-1/3 px-4 mb-8 sm:mb-0">
+                        <div class="text-center">
+                            <i class="fas fa-tools text-6xl text-transparent bg-clip-text bg-gradient-to-r from-emerald-700 via-indigo-700 to-purple-900 mb-4"></i>
+                            <h3 class="text-2xl font-semibold mb-2">Engineering Expertise</h3>
+                            <p class="text-gray-600">Extensive experience in Engineering ensuring reliable, fast and cost efficient systems</p>
+                        </div>
+                    </div>
+                    <!-- Software Development -->
+                    <div class="w-full sm:w-1/2 lg:w-1/3 px-4 mb-8 sm:mb-0">
+                        <div class="text-center">
+                            <i class="fas fa-code text-6xl text-transparent bg-clip-text bg-gradient-to-r from-emerald-700 via-indigo-700 to-purple-900 mb-4"></i>
+                            <h3 class="text-xl font-semibold mb-2">Automation Expert</h3>
+                            <p class="text-gray-600">Proficient in creating different kind of automations, REST API's, software</p>
+                        </div>
+                    </div>
+                    <!-- Contributor -->
+                    <div class="w-full sm:w-1/2 lg:w-1/3 px-4 mb-8 sm:mb-0">
+                        <div class="text-center">
+                            <i class="fas fa-code-branch text-6xl text-transparent bg-clip-text bg-gradient-to-r from-emerald-700 via-indigo-700 to-purple-900 mb-4"></i>
+                            <h3 class="text-xl font-semibold mb-2">Open Source Contributor</h3>
+                            <p class="text-gray-600">Contributing to various open source projects, including the Golang framework Gin</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-wrap justify-center mt-8">
+                    <!-- Leadership and Mentorship -->
+                    <div class="w-full sm:w-1/2 lg:w-1/3 px-4 mb-8 sm:mb-0">
+                        <div class="text-center">
+                            <i class="fas fa-chalkboard-teacher text-6xl text-transparent bg-clip-text bg-gradient-to-r from-emerald-700 via-indigo-700 to-purple-900 mb-4"></i>
+                            <h3 class="text-xl font-semibold mb-2">Leadership & Mentorship</h3>
+                            <p class="text-gray-600">Helping team members grow and develop their skills through effective leadership and mentorship</p>
+                        </div>
+                    </div>
+                    <!-- Business Management -->
+                    <div class="w-full sm:w-1/2 lg:w-1/3 px-4 mb-8 sm:mb-0">
+                        <div class="text-center">
+                            <i class="fas fa-briefcase text-6xl text-transparent bg-clip-text bg-gradient-to-r from-emerald-700 via-indigo-700 to-purple-900 mb-4"></i>
+                            <h3 class="text-xl font-semibold mb-2">Business Management</h3>
+                            <p class="text-gray-600">Handling administrative tasks, managing costs, and securing investments</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- Experience -->
-        <section id="Experience" class="pt-28 pb-20 experience-background">
+        <section id="Experience" class="pt-28 pb-20">
             <div class="container mx-auto px-4 sm:px-10 md:px-20 custom-font-color">
                 <h1 class="text-4xl font-bold mb-20 text-center">Experience</h1>
                 <div id="experienceContent">
                     <!-- Experience content will be inserted here by the JavaScript -->
                 </div>
-            </div>
-        </section>
-        <!-- Projects -->
-        <section id="Projects" class="pt-28 pb-20">
-            <div class="container mx-auto px-4 sm:px-10 md:px-20 custom-font-color">
-                <h1 class="text-4xl font-bold mb-20 text-center">Projects</h1>
-                <div id="projectCards" class="flex flex-wrap justify-center">
-                    <!-- Project cards will be inserted here by the JavaScript -->
-                </div>
-            </div>
-        </section>
-        <!-- Tech Stack -->
-        <section id="TechStack" class="experience-background pb-20 pt-28">
-            <div class="container mx-auto px-4 sm:px-10 md:px-20 custom-font-color">
-                <h1 class="text-3xl font-bold mb-5 text-center">Tech Stack</h1>
-                <p class="text-2xl text-center mb-20">Here you can familiarise the main tech stack i'm familiar with</p>
-                <hr class="border-t border-white mt-4 mb-4">
-                <div id="techStack">
-                    <!-- Tech Stack content goes here -->
-                </div>
-                <hr class="border-t border-white mt-4 mb-4">
             </div>
         </section>
         <!-- Footer -->
