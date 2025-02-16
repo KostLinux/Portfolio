@@ -1,5 +1,1 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const copyrightElement = document.getElementById('copyright');
-    const currentYear = new Date().getFullYear();
-    copyrightElement.innerHTML = `&copy; ${currentYear} Christofher Koest`;
-});
+document.addEventListener("DOMContentLoaded",function(){var e=document.getElementById("copyright"),t=(new Date).getFullYear();e.innerHTML=`&copy; ${t} Christofher Koest`});
