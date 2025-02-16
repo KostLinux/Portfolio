@@ -1,201 +1,859 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Christofher Portfolio</title>
-        <!-- CryptoCurrency -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/monzanifabio/cryptofont/cryptofont.css">
-        <!-- Load TailWindCSS -->
-        <script src="https://cdn.tailwindcss.com"></script>
-        <!-- Load FontsAwesome -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-        <!-- Load TypedJS-->
-        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-        <!-- Load AlpineJS -->
-        <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.8/dist/cdn.min.js" defer></script>
-        <!-- Load custom css -->
-        <link rel="stylesheet" type="text/css" href="./css/main.css">
-        <!-- Load custom scripts -->
-        <script src="./js/script.js"></script>
-    </head>
-    <body>
-    <section id="Loader" class="bg-white dark:bg-black flex justify-center items-center h-screen">
-        <div class="spinner bg-pink-200 rounded-full w-40 h-40 flex justify-center items-center">
-          <img src="./assets/img/pedro.png" alt="Pedro!">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="/assets/js/tabswitcher.js"></script>
+    <script src="/assets/js/backtop.js"></script>
+    <script src="/assets/js/skills.js"></script>
+    <script src="/assets/js/footer.js"></script>
+    <script src="/assets/js/calendly.js"></script>"
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <section id="hero" class="relative h-screen w-full">
+        <!-- Background image with overlay -->
+        <div class="absolute inset-0">
+            <img src="./assets/img/nightcity.jpg" alt="Night City" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gray-800 opacity-60"></div>
         </div>
-      </section>
-    <!-- Navbar -->
-    <header class="gradient-bg custom-font-color fixed w-full p-4 flex justify-between items-center z-50">
-        <div class="flex items-center">
-            <a href="https://github.com/KostLinux" target="_blank" class="flex items-center">
-                <i class="fab fa-github text-xl mr-2"></i>
-            </a>
-            <a class="text-xl" href="#Main">Christofher Portfolio</a>
-        </div>
-        <button id="menuButton" class="md:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6 text-white">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-            </svg>
-        </button>
-        <div class="hidden md:flex space-x-4">
-            <a href="#Main" class="custom-font-color hover:underline main-nav-item">Home</a>
-            <a href="#About" class="custom-font-color hover:underline about-nav-item">About</a>
-            <a href="#Skills" class="custom-font-color hover:underline skills-nav-item">Skills</a>
-            <a href="#Experience" class="custom-font-color hover:underline experience-nav-item">Experience</a>
-        </div>
-        <div class="overflow-hidden transition-all ease-in-out absolute top-full left-0 gradient-bg custom-font-color w-full opacity-0 max-h-0 md:hidden" id="menu">
-            <a href="#Main" class="block p-4 custom-font-color hover:underline main-nav-item">Home</a>
-            <a href="#About" class="block p-4 custom-font-color hover:underline about-nav-item">About</a>
-            <a href="#Skills" class="block p-4 custom-font-color hover:underline skills-nav-item">Skills</a>
-            <a href="#Experience" class="block p-4 custom-font-color hover:underline experience-nav-item">Experience</a>
-        </div>
-    </header>
-        <!-- Main -->
-        <section id="Main">
-            <div class="relative flex flex-col md:flex-row bg-center bg-cover main-page overflow-auto">
-                <div class="p-4 sm:p-10 md:p-20 absolute left-0 w-3/4 text-left grid grid-rows-3 items-center"> 
-                    <h2 class="text-4xl custom-font-color mb-2 md:mb-0 row-start-1">KostLinux, <span id="professions"></span></h2>
-                    <p class="custom-font-color text-lg mt-4 row-start-2"><span id="welcomes"></span></p>
+        
+        <!-- Content container -->
+        <div class="relative z-10 flex flex-col md:flex-row items-center justify-center h-full text-white px-4 space-y-8 md:space-y-0 md:space-x-8">
+            <!-- Left side: Profile Image and Social Links -->
+            <div class="flex flex-col items-center space-y-6">
+                <div class="flex-shrink-0">
+                    <img src="./assets/img/portfolio.jpeg" alt="Profile Picture" 
+                         class="rounded-full w-32 md:w-60 md:h-60 object-cover border-4 border-orange-500 shadow-lg hover:scale-105 transition-transform duration-300">
+                </div>
+                <!-- Social Links -->
+                <div class="flex space-x-4">
+                    <a href="https://github.com/KostLinux" target="_blank" class="text-white hover:text-orange-500 transition-colors duration-300">
+                        <i class="fab fa-github text-2xl"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/christofher-kost/" target="_blank" class="text-white hover:text-orange-500 transition-colors duration-300">
+                        <i class="fab fa-linkedin text-2xl"></i>
+                    </a>
+                    <a href="mailto:christofher.kost@gmail.com" class="text-white hover:text-orange-500 transition-colors duration-300">
+                        <i class="fas fa-envelope text-2xl"></i>
+                    </a>
                 </div>
             </div>
-        </section>
-        <!-- About me -->
-        <section id="About" class="pt-20 pb-20">
-            <div class="container mx-auto flex flex-wrap custom-font-color px-4 sm:px-10 md:px-20">  
-                <div class="w-full sm:w-1/4 md:w-2/4 lg:w-3/4 p-10">
-                    <h2 class="text-4xl font-bold mb-10">About me</h2>
-                    <h3 class="text-2xl font-bold mb-5">🔍 Who i am?</h3>
-                    <p class="mt-2">
-                        Greetings and welcome! I'm Christofher, a passionate certified Site Reliability Engineer and enthusiast of AWS
-                        Serverless services.
-                        I navigate the world of IT with enthusiasm, crafting seamless solutions using tools like CDKs, Go, Terraform, AWS, and
-                        occasionally Ansible.
-                        Automation is my go-to approach, as it speeds up tasks and boosts efficiency.
+    
+            <!-- Vertical Line -->
+            <div class="hidden md:block w-px h-48 bg-orange-500/50"></div>
+    
+            <!-- Right side: Text Content -->
+            <div class="flex flex-col max-w-lg text-center md:text-left">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Christofher Koest</h1>
+                <div class="h-1 w-24 bg-orange-500 mb-4 mx-auto md:mx-0"></div>
+                <p class="text-lg md:text-xl lg:text-2xl mb-4 text-orange-200">DevOps Engineer & Entrepreneur</p>
+                <p class="text-base md:text-lg text-gray-300 mb-6">Transforming Businesses Through Cloud Innovation</p>
+                
+                <!-- Key Stats -->
+                <div class="flex flex-wrap gap-4 mb-8 justify-center md:justify-start">
+                    <div class="flex items-center space-x-2">
+                        <i class="fas fa-code-branch text-orange-500"></i>
+                        <span class="text-gray-300">5+ Years Experience</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <i class="fas fa-users text-orange-500"></i>
+                        <span class="text-gray-300">50%+ Costs Efficiency</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <i class="fas fa-project-diagram text-orange-500"></i>
+                        <span class="text-gray-300">70% Companies Growth</span>
+                    </div>
+                </div>
+    
+                <!-- CTA Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4 items-center justify-center md:justify-start">
+                    <a href="#contact" class="w-full sm:w-auto bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 text-center">
+                        Hire Me
+                    </a>
+                    <a href="#about" class="w-full sm:w-auto bg-transparent hover:bg-orange-600 text-orange-500 hover:text-white font-bold py-3 px-8 rounded-full transition duration-300 border-2 border-orange-500 text-center">
+                        About Me
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <!-- Tab Navigation -->
+            <div class="flex justify-center mb-12">
+                <button id="tab-professional" class="px-8 py-3 text-lg font-semibold text-white bg-gray-800 rounded-l-lg border-r border-gray-700 hover:bg-gray-700 transition-colors tab-active">
+                    Professional
+                </button>
+                <button id="tab-personal" class="px-8 py-3 text-lg font-semibold text-white bg-gray-800 rounded-r-lg hover:bg-gray-700 transition-colors">
+                    Personal
+                </button>
+            </div>
+    
+            <!-- Professional Content -->
+            <div id="content-professional" class="flex flex-col md:flex-row gap-12">
+                <!-- Left side: About Text -->
+                <div class="w-full md:w-2/3 space-y-6">
+                    <h2 class="text-4xl font-bold text-white">
+                        <span class="text-orange-500">About</span> Me
+                    </h2>
+                    <div class="h-1 w-24 bg-orange-500"></div>
+                    <p class="text-gray-300 text-lg">
+                        As an expert in development operations (DevOps) with a business mindset from Wisepace, I help companies achieve peak efficiency within months. I collaborate with developers, implement automation solutions, and ensure end-to-end observability for applications and services while resolving business-level challenges with department leaders.
                     </p>
-                    <h3 class="text-2xl font-bold mb-5 mt-10">📚 Self-Development</h3>
-                    <p class="mt-2">
-                        In my spare time, I am busy with my startup company called LookinLabs, where as a CEO, Site Reliability Engineer and Mentor, i am responsible
-                        for leading my team, providing guidance and support for students and writing code for our projects.
-                        Additionally i am excited of learning programming in Go, by contributing to open-source projects like "Gin-Gonic" or
-                        "Web-Check by Lissy", investing in the cryptocurrency world and stocks, reading books about psychology, business and software architecture.
+                    <p class="text-gray-300 text-lg">
+                        I dedicate my on-job free time to developing internal Golang tools that automate routine tasks for my team.
                     </p>
-                    <h3 class="text-2xl font-bold mb-5 mt-10">🚀 Consultancy Services</h3>
-                    <p class="mt-2">
-                        I'm open to challenges and opportunities, so feel free to contact me for IT consultancy services. It doesn't matter
-                        which topic you have in mind, whether it's about hosting a website somewhere, making decisions about moving your
-                        infrastructure from on-premises to the cloud or providing courses for your employees. I'm here to help you! 
-                        I want to emphasize that I prioritize finding the most cost-efficient solutions possible for your company. 
-                        Remember, there are no impossible tasks, only tasks that need to be solved. Also there are no expensive clouds, there
-                        are only poorly optimized solutions.
-                    </p>
-                    <h3 class="text-2xl font-bold mb-5 mt-10">🏆 Experience &amp; Achievements</h3>
-                    <p class="mt-2">
-                        My journey in IT started when I was 18 years old as a simple system administrator.
-                        In 5 years, I moved from system administrator to Senior Site Reliability Engineer.
-                        Behind the scenes, I did a lot of work, built many projects, learned
-                        a lot of things, failed numerous times, but never gave up. So, one of my proudest accomplishments was transitioning
-                        seven on-premise Kubernetes clusters from manual setups to fully automated, cloud-compatible systems in just four
-                        months. It was a significant undertaking, but I successfully executed it!
-                        </p>
-                        <h3 class="text-2xl font-bold mb-5 mt-10">🌟 Opinion About Success</h3>
-                        <p class="mt-2">
-                            My experience has shown me that the best way to learn is through discipline.
-                            When faced with numerous failures, one should not surrender, but rather examine the situation from
-                            a different perspective and deduce accordingly. There's nothing that's impossible;
-                            you just need to find the right approach to solve the problem. Good examples of this are
-                            startup unicorns like Bolt, OpenAI, Figure, and Wallester. They encountered many failures, underwent multiple logo
-                            and company name changes, but ultimately found the path to success.
+                    <p class="text-gray-300 text-lg">
+                        My technical leadership at Volkswagen Group has resulted in a 60%+ efficiency boost and the successful mentoring of seven operation engineers. 
                     </p>
                 </div>
-                <div class="w-full sm:w-3/4 md:w-2/4 lg:w-1/4 p-10">
-                    <img src="assets/img/me.jpg" class="object-cover w-24 h-24 sm:w-32 sm:h-32 md:w-64 md:h-64 lg:w-96 lg:h-96 xl:w-128 xl:h-128 rounded-full sm:border-2 md:border-4 lg:border-8 border-white">
-                    <p class="mt-6"><i class="fas fa-laptop-code"></i> Site Reliability / Senior DevOps Engineer</p>
-                    <p class="mt-2"><a href="https://resume.io/r/TzjnkXV4h" class="hover:underline"><i class="fas fa-briefcase"></i> CV/Resume</a></p>
-                    <p class="mt-2"><a href="https://github.com/LookinLabs" class="hover:underline"><i class="fa-solid fa-users"></i> LookinLabs</a></p>
-                    <p class="mt-2"><a href="https://github.com/KostLinux" class="hover:underline"><i class="fab fa-github"></i> Github</a></p>
-                    <p class="mt-2"> <a href="https://www.linkedin.com/in/christofher-kost/" class="hover:underline"> <i class="fab fa-linkedin"></i> LinkedIn</a></p>
-                    <hr class="my-4">
-                    <div class="flex flex-wrap">
-                        <a href="https://www.credly.com/badges/ac973356-0950-4d56-a5a5-2d1e0e049554/public_url" target="_blank">
-                            <img src="./assets/img/certs/practitioner_cert.png" class="w-24 h-24 m-2">
+    
+                <!-- Right side: Stats -->
+                <div class="w-full md:w-1/3 flex flex-col gap-6">
+                    <div class="text-center p-6 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors duration-300">
+                        <div class="text-orange-500 text-4xl mb-4">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <span class="text-2xl font-bold text-white block mb-2">Efficiency Boost</span>
+                        <p class="text-3xl font-bold text-orange-500 mb-2">60%+</p>
+                        <p class="text-gray-400">Average Result</p>
+                    </div>
+    
+                    <div class="text-center p-6 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors duration-300">
+                        <div class="text-orange-500 text-4xl mb-4">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <span class="text-2xl font-bold text-white block mb-2">Team Growth</span>
+                        <p class="text-3xl font-bold text-orange-500 mb-2">7</p>
+                        <p class="text-gray-400">Engineers Mentored</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Personal Content (Hidden by default) -->
+            <div id="content-personal" class="hidden">
+                <div class="w-full space-y-12">
+                    <h2 class="text-4xl font-bold text-white text-center">
+                        <span class="text-orange-500">Beyond</span> Work
+                    </h2>
+                    <div class="h-1 w-24 bg-orange-500 mx-auto"></div>
+
+                    <!-- Grid for interests -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+                        <!-- Neuropsychology Section -->
+                        <div class="bg-gray-800 p-8 rounded-lg hover:bg-gray-700 transition-all duration-300">
+                            <div class="text-orange-500 text-4xl mb-4 text-center">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white mb-4 text-center">Neuropsychology</h3>
+                            <p class="text-gray-300 text-lg">
+                                I study neuropsychology to understand human behavior and brain working principles. This knowledge helped me found Wisepace, inspired by Andrey Kurpatov's works on neuropsychology and business development.
+                            </p>
+                        </div>
+
+                        <!-- Automotive Section -->
+                        <div class="bg-gray-800 p-8 rounded-lg hover:bg-gray-700 transition-all duration-300">
+                            <div class="text-orange-500 text-4xl mb-4 text-center">
+                                <i class="fas fa-car"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white mb-4 text-center">Automotive</h3>
+                            <p class="text-gray-300 text-lg">
+                                As a car enthusiast, I maintain and repair my vehicles independently. This hands-on approach not only saves money but also satisfies my passion for automotive engineering.
+                            </p>
+                        </div>
+
+                        <!-- Web3 Section -->
+                        <div class="bg-gray-800 p-8 rounded-lg hover:bg-gray-700 transition-all duration-300">
+                            <div class="text-orange-500 text-4xl mb-4 text-center">
+                                <i class="fas fa-cube"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white mb-4 text-center">Web3</h3>
+                            <p class="text-gray-300 text-lg">
+                                I'm passionate about Web3 and actively invest in cryptocurrency. Despite current corporate dominance in Web2, I believe Web3 will significantly impact the future of internet technology.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="whatido" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-white mb-4">What I <span class="text-orange-500">Do</span></h2>
+                <div class="h-1 w-24 bg-orange-500 mx-auto"></div>
+            </div>
+    
+            <!-- Tab Navigation -->
+            <div class="flex flex-wrap justify-center mb-12 gap-2">
+                <button data-tab="devops" class="px-6 py-2 text-lg font-semibold text-white bg-gray-900 rounded-lg hover:bg-orange-600 transition-colors tab-active">
+                    DevOps
+                </button>
+                <button data-tab="sre" class="px-6 py-2 text-lg font-semibold text-white bg-gray-900 rounded-lg hover:bg-orange-600 transition-colors">
+                    Site Reliability
+                </button>
+                <button data-tab="leadership" class="px-6 py-2 text-lg font-semibold text-white bg-gray-900 rounded-lg hover:bg-orange-600 transition-colors">
+                    Leadership
+                </button>
+                <button data-tab="development" class="px-6 py-2 text-lg font-semibold text-white bg-gray-900 rounded-lg hover:bg-orange-600 transition-colors">
+                    Development
+                </button>
+            </div>
+    
+            <!-- DevOps Content -->
+            <div id="content-devops" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-900 p-8 rounded-lg transform hover:scale-105 transition-transform duration-300">
+                    <div class="text-orange-500 text-4xl mb-4 text-center">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Cloud Architecture</h3>
+                    <p class="text-gray-300">
+                        Building most cost-efficient applications via AWS and Azure cloud using managed and serverless solutions.
+                    </p>
+                </div>
+
+                <div class="bg-gray-900 p-8 rounded-lg transform hover:scale-105 transition-transform duration-300">
+                    <div class="text-orange-500 text-4xl mb-4 text-center">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">GitOps & CD</h3>
+                    <p class="text-gray-300">
+                        Implementing continuous delivery following GitOps best practices (AppOfApps principle) via ArgoCD and Flux.
+                    </p>
+                </div>
+
+                <div class="bg-gray-900 p-8 rounded-lg transform hover:scale-105 transition-transform duration-300">
+                    <div class="text-orange-500 text-4xl mb-4 text-center">
+                        <i class="fas fa-dharmachakra"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Kubernetes</h3>
+                    <p class="text-gray-300">
+                        5+ years experience managing clusters, operators, applications, and stateful/stateless workloads.
+                    </p>
+                </div>
+
+                <div class="bg-gray-900 p-8 rounded-lg transform hover:scale-105 transition-transform duration-300">
+                    <div class="text-orange-500 text-4xl mb-4 text-center">
+                        <i class="fas fa-sack-dollar"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Cost Optimization</h3>
+                    <p class="text-gray-300">
+                        Achieved 50%+ cost reduction in most companies through operational and infrastructure optimizations.
+                    </p>
+                </div>
+
+                <div class="bg-gray-900 p-8 rounded-lg transform hover:scale-105 transition-transform duration-300">
+                    <div class="text-orange-500 text-4xl mb-4 text-center">
+                        <i class="fas fa-gauge-high"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Performance</h3>
+                    <p class="text-gray-300">
+                        Significantly improved pipeline speeds and application performance through code optimizations.
+                    </p>
+                </div>
+
+                <div class="bg-gray-900 p-8 rounded-lg transform hover:scale-105 transition-transform duration-300">
+                    <div class="text-orange-500 text-4xl mb-4 text-center">
+                        <i class="fas fa-diagram-project"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Process Design</h3>
+                    <p class="text-gray-300">
+                        Built various processes from scratch including release management, development workflows, and risk analysis.
+                    </p>
+                </div>
+            </div>
+
+            <!-- SRE Content -->
+            <div id="content-sre" class="hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-900 p-8 rounded-lg transform hover:scale-105 transition-transform duration-300">
+                    <div class="text-orange-500 text-4xl mb-4 text-center">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Observability</h3>
+                    <p class="text-gray-300">
+                        Implementing E2E monitoring via ELK, New Relic, AWS CloudWatch, and Azure Metrics following best practices.
+                    </p>
+                </div>
+
+                <div class="bg-gray-900 p-8 rounded-lg transform hover:scale-105 transition-transform duration-300">
+                    <div class="text-orange-500 text-4xl mb-4 text-center">
+                        <i class="fas fa-bell"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Incident Management</h3>
+                    <p class="text-gray-300">
+                        Reduced incident response time from hours to minutes, with average resolution time of 20-45 minutes.
+                    </p>
+                </div>
+
+                <div class="bg-gray-900 p-8 rounded-lg transform hover:scale-105 transition-transform duration-300">
+                    <div class="text-orange-500 text-4xl mb-4 text-center">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Code Optimization</h3>
+                    <p class="text-gray-300">
+                        Contributing to application improvements, fixing critical bugs and memory leaks.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Leadership Content -->
+            <div id="content-leadership" class="hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-900 p-8 rounded-lg transform hover:scale-105 transition-transform duration-300">
+                    <div class="text-orange-500 text-4xl mb-4 text-center">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Mentorship</h3>
+                    <p class="text-gray-300">
+                        Mentoring juniors through practical and theoretical tasks, helping them achieve their career goals.
+                    </p>
+                </div>
+
+                <div class="bg-gray-900 p-8 rounded-lg transform hover:scale-105 transition-transform duration-300">
+                    <div class="text-orange-500 text-4xl mb-4 text-center">
+                        <i class="fas fa-business-time"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Business Development</h3>
+                    <p class="text-gray-300">
+                        Experience in business development, startup growth, and FinOps from founding Wisepace.
+                    </p>
+                </div>
+
+                <div class="bg-gray-900 p-8 rounded-lg transform hover:scale-105 transition-transform duration-300">
+                    <div class="text-orange-500 text-4xl mb-4 text-center">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Project Management</h3>
+                    <p class="text-gray-300">
+                        Led multiple projects involving 20+ teams across software development, DevOps, and platform engineering.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Development Content -->
+            <div id="content-development" class="hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-900 p-8 rounded-lg transform hover:scale-105 transition-transform duration-300">
+                    <div class="text-orange-500 text-4xl mb-4 text-center">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Development Principles</h3>
+                    <p class="text-gray-300">
+                        Strong knowledge of SOLID, 12-factor, conventional commits, and semantic versioning principles.
+                    </p>
+                </div>
+
+                <div class="bg-gray-900 p-8 rounded-lg transform hover:scale-105 transition-transform duration-300">
+                    <div class="text-orange-500 text-4xl mb-4 text-center">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Wisepace Principles</h3>
+                    <p class="text-gray-300">
+                        Founded <a href="https://principles.wisepace.org" target="_blank" rel="noopener noreferrer" class="text-orange-500 hover:text-orange-400">Wisepace Coding Principles</a> to share development best practices.
+                    </p>
+                </div>
+
+                <div class="bg-gray-900 p-8 rounded-lg transform hover:scale-105 transition-transform duration-300">
+                    <div class="text-orange-500 text-4xl mb-4 text-center">
+                        <i class="fas fa-diagram-project"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Architecture</h3>
+                    <p class="text-gray-300">
+                        Experience with Hexagonal, MVC, Microservices, and Event-Driven architectures.
+                    </p>
+                </div>
+
+                <div class="bg-gray-900 p-8 rounded-lg transform hover:scale-105 transition-transform duration-300">
+                    <div class="text-orange-500 text-4xl mb-4 text-center">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Open Source</h3>
+                    <p class="text-gray-300">
+                        Contributed to multiple different (ex: WebCheck, Gin Gonic, and Edu01) public repositories.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-white mb-4">Work <span class="text-orange-500">Experience</span></h2>
+                <div class="h-1 w-24 bg-orange-500 mx-auto"></div>
+            </div>
+    
+            <!-- Timeline Container -->
+            <div class="relative wrap overflow-hidden p-10 h-full">
+                <!-- Vertical Line -->
+                <div class="border-2-2 absolute border-orange-500 h-full border" style="left: 50%"></div>
+    
+                <!-- Timeline Items -->
+                <!-- Current Positions -->
+                <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                    <div class="order-1 w-5/12"></div>
+                    <div class="z-20 flex items-center order-1 bg-orange-500 shadow-xl w-8 h-8 rounded-full">
+                        <h1 class="mx-auto font-semibold text-lg text-white">1</h1>
+                    </div>
+                    <div class="order-1 bg-gray-800 rounded-lg shadow-xl w-5/12 px-6 py-4 hover:bg-gray-700 transition-all duration-300">
+                        <h3 class="mb-3 font-bold text-orange-500 text-md md:text-xl">Present</h3>
+                        <div class="text-sm leading-snug tracking-wide text-gray-300 text-opacity-100">
+                            <p class="font-bold text-white mb-1">Consultant & Founder @ Wisepace</p>
+                            <p>Nov 2024 - Present</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                    <div class="order-1 w-5/12"></div>
+                    <div class="z-20 flex items-center order-1 bg-orange-500 shadow-xl w-8 h-8 rounded-full">
+                        <h1 class="mx-auto font-semibold text-lg text-white">2</h1>
+                    </div>
+                    <div class="order-1 bg-gray-800 rounded-lg shadow-xl w-5/12 px-6 py-4 hover:bg-gray-700 transition-all duration-300">
+                        <h3 class="mb-3 font-bold text-orange-500 text-md md:text-xl">CARIAD Estonia AS (VAG)</h3>
+                        <div class="text-sm leading-snug tracking-wide text-gray-300 text-opacity-100">
+                            <p class="font-bold text-white mb-1">Site Reliability Engineer</p>
+                            <p>May 2024 - Present</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- LookinLabs -->
+                <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                    <div class="order-1 w-5/12"></div>
+                    <div class="z-20 flex items-center order-1 bg-orange-500 shadow-xl w-8 h-8 rounded-full">
+                        <h1 class="mx-auto font-semibold text-lg text-white">3</h1>
+                    </div>
+                    <div class="order-1 bg-gray-800 rounded-lg shadow-xl w-5/12 px-6 py-4 hover:bg-gray-700 transition-all duration-300">
+                        <h3 class="mb-3 font-bold text-orange-500 text-md md:text-xl">LookinLabs</h3>
+                        <div class="text-sm leading-snug tracking-wide text-gray-300 text-opacity-100">
+                            <p class="font-bold text-white mb-1">Founder</p>
+                            <p>Jun 2024 - Nov 2024</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- LHV Positions -->
+                <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                    <div class="order-1 w-5/12"></div>
+                    <div class="z-20 flex items-center order-1 bg-orange-500 shadow-xl w-8 h-8 rounded-full">
+                        <h1 class="mx-auto font-semibold text-lg text-white">4</h1>
+                    </div>
+                    <div class="order-1 bg-gray-800 rounded-lg shadow-xl w-5/12 px-6 py-4 hover:bg-gray-700 transition-all duration-300">
+                        <h3 class="mb-3 font-bold text-orange-500 text-md md:text-xl">LHV</h3>
+                        <div class="text-sm leading-snug tracking-wide text-gray-300 text-opacity-100">
+                            <p class="font-bold text-white mb-1">Site Reliability Engineer</p>
+                            <p>Jan 2024 - Apr 2024</p>
+                            <div class="mt-2 border-t border-gray-700 pt-2">
+                                <p class="font-bold text-white mb-1">DevOps Engineer</p>
+                                <p>Oct 2023 - Jan 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- TEHIK Positions -->
+                <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                    <div class="order-1 w-5/12"></div>
+                    <div class="z-20 flex items-center order-1 bg-orange-500 shadow-xl w-8 h-8 rounded-full">
+                        <h1 class="mx-auto font-semibold text-lg text-white">5</h1>
+                    </div>
+                    <div class="order-1 bg-gray-800 rounded-lg shadow-xl w-5/12 px-6 py-4 hover:bg-gray-700 transition-all duration-300">
+                        <h3 class="mb-3 font-bold text-orange-500 text-md md:text-xl">TEHIK</h3>
+                        <div class="text-sm leading-snug tracking-wide text-gray-300 text-opacity-100">
+                            <p class="font-bold text-white mb-1">Platform Engineering Lead</p>
+                            <p>Feb 2023 - Oct 2023</p>
+                            <div class="mt-2 border-t border-gray-700 pt-2">
+                                <p class="font-bold text-white mb-1">Platform Engineer</p>
+                                <p>Jun 2021 - Feb 2023</p>
+                            </div>
+                            <div class="mt-2 border-t border-gray-700 pt-2">
+                                <p class="font-bold text-white mb-1">Linux System Administrator</p>
+                                <p>Apr 2020 - Jun 2021</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Telia Internship -->
+                <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                    <div class="order-1 w-5/12"></div>
+                    <div class="z-20 flex items-center order-1 bg-orange-500 shadow-xl w-8 h-8 rounded-full">
+                        <h1 class="mx-auto font-semibold text-lg text-white">6</h1>
+                    </div>
+                    <div class="order-1 bg-gray-800 rounded-lg shadow-xl w-5/12 px-6 py-4 hover:bg-gray-700 transition-all duration-300">
+                        <h3 class="mb-3 font-bold text-orange-500 text-md md:text-xl">Telia Estonia AS</h3>
+                        <div class="text-sm leading-snug tracking-wide text-gray-300 text-opacity-100">
+                            <p class="font-bold text-white mb-1">Internship</p>
+                            <p>July 2019 - Dec 2019</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-white mb-4">Skills & <span class="text-orange-500">Technologies</span></h2>
+                <div class="h-1 w-24 bg-orange-500 mx-auto"></div>
+            </div>
+    
+            <!-- Skills Toggle -->
+            <div class="flex justify-center mb-12">
+                <div class="bg-gray-900 p-1.5 rounded-full inline-flex">
+                    <button id="hardSkillsBtn" class="px-8 py-2 rounded-full text-white font-semibold transition-all duration-300 bg-orange-600">
+                        Hard Skills
+                    </button>
+                    <button id="softSkillsBtn" class="px-8 py-2 rounded-full text-gray-400 font-semibold transition-all duration-300 hover:text-white">
+                        Soft Skills
+                    </button>
+                </div>
+            </div>
+    
+            <!-- Hard Skills Content -->
+            <div id="hardSkills" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Cloud & Infrastructure -->
+                <div class="bg-gray-900 p-6 rounded-lg transform hover:scale-105 transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-cloud text-orange-500 text-2xl mr-3"></i>
+                        <h3 class="text-xl font-bold text-white">Cloud Platforms</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">AWS</span>
+                        <span class="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">Azure</span>
+                        <span class="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">VMWare</span>
+                    </div>
+                </div>
+    
+                <!-- Infrastructure as Code -->
+                <div class="bg-gray-900 p-6 rounded-lg transform hover:scale-105 transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-code text-orange-500 text-2xl mr-3"></i>
+                        <h3 class="text-xl font-bold text-white">Infrastructure as Code</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">AWS CDK</span>
+                        <span class="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">CloudFormation</span>
+                        <span class="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">Bicep</span>
+                        <span class="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">Terraform</span>
+                        <span class="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">Ansible</span>
+                    </div>
+                </div>
+    
+                <!-- CI/CD -->
+                <div class="bg-gray-900 p-6 rounded-lg transform hover:scale-105 transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-code-branch text-orange-500 text-2xl mr-3"></i>
+                        <h3 class="text-xl font-bold text-white">CI/CD & Artifacts</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">Github Actions</span>
+                        <span class="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">Gitlab CI</span>
+                        <span class="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">ArgoCD</span>
+                        <span class="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">Artifactory</span>
+                        <span class="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">Nexus</span>
+                    </div>
+                </div>
+    
+                <!-- Containers & Orchestration -->
+                <div class="bg-gray-900 p-6 rounded-lg transform hover:scale-105 transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-cube text-orange-500 text-2xl mr-3"></i>
+                        <h3 class="text-xl font-bold text-white">Containers</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">Kubernetes</span>
+                        <span class="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">Docker</span>
+                        <span class="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">Rancher</span>
+                        <span class="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">Longhorn</span>
+                    </div>
+                </div>
+    
+                <!-- Observability -->
+                <div class="bg-gray-900 p-6 rounded-lg transform hover:scale-105 transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-chart-line text-orange-500 text-2xl mr-3"></i>
+                        <h3 class="text-xl font-bold text-white">Observability</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">NewRelic</span>
+                        <span class="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">CloudWatch</span>
+                        <span class="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">Prometheus</span>
+                        <span class="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">Grafana</span>
+                        <span class="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">OpenTelemetry</span>
+                        <span class="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">Zabbix</span>
+                        <span class="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">Azure Monitor</span>
+                    </div>
+                </div>
+    
+                <!-- Programming -->
+                <div class="bg-gray-900 p-6 rounded-lg transform hover:scale-105 transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-code text-orange-500 text-2xl mr-3"></i>
+                        <h3 class="text-xl font-bold text-white">Programming</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">PHP</span>
+                        <span class="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">Golang</span>
+                        <span class="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">Python</span>
+                        <span class="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">Shell</span>
+                        <span class="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">Java</span>
+                        <span class="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">Kotlin</span>
+                        <span class="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">JavaScript</span>
+                    </div>
+                </div>
+    
+                <!-- Data & Auth -->
+                <div class="bg-gray-900 p-6 rounded-lg transform hover:scale-105 transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-database text-orange-500 text-2xl mr-3"></i>
+                        <h3 class="text-xl font-bold text-white">Data & Authentication</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">SQL</span>
+                        <span class="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">NoSQL</span>
+                        <span class="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">OAuth</span>
+                        <span class="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">JWT</span>
+                        <span class="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">SSO</span>
+                    </div>
+                </div>
+    
+                <!-- Message Queues -->
+                <div class="bg-gray-900 p-6 rounded-lg transform hover:scale-105 transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-exchange-alt text-orange-500 text-2xl mr-3"></i>
+                        <h3 class="text-xl font-bold text-white">Message Queues</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">RabbitMQ</span>
+                        <span class="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">AWS SQS</span>
+                        <span class="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">Azure Service Bus</span>
+                    </div>
+                </div>
+    
+                <!-- Networking -->
+                <div class="bg-gray-900 p-6 rounded-lg transform hover:scale-105 transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-network-wired text-orange-500 text-2xl mr-3"></i>
+                        <h3 class="text-xl font-bold text-white">Networking</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">VPN</span>
+                        <span class="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">NAT</span>
+                        <span class="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">BGP</span>
+                        <span class="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">Network Segmentation</span>
+                    </div>
+                </div>
+    
+                <!-- Security -->
+                <div class="bg-gray-900 p-6 rounded-lg transform hover:scale-105 transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-shield-alt text-orange-500 text-2xl mr-3"></i>
+                        <h3 class="text-xl font-bold text-white">Security</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">Pentesting</span>
+                        <span class="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">Vulnerability Assessment</span>
+                        <span class="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">Security Best Practices</span>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Soft Skills Content -->
+            <div id="softSkills" class="hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Leadership -->
+                <div class="bg-gray-900 p-6 rounded-lg transform hover:scale-105 transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-users text-orange-500 text-2xl mr-3"></i>
+                        <h3 class="text-xl font-bold text-white">Leadership</h3>
+                    </div>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-gray-300">
+                            <i class="fas fa-check text-orange-500 mr-2"></i>
+                            Team development & mentorship
+                        </li>
+                        <li class="flex items-center text-gray-300">
+                            <i class="fas fa-check text-orange-500 mr-2"></i>
+                            Communication skills
+                        </li>
+                    </ul>
+                </div>
+    
+                <!-- Teamwork -->
+                <div class="bg-gray-900 p-6 rounded-lg transform hover:scale-105 transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-hands-helping text-orange-500 text-2xl mr-3"></i>
+                        <h3 class="text-xl font-bold text-white">Teamwork</h3>
+                    </div>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-gray-300">
+                            <i class="fas fa-check text-orange-500 mr-2"></i>
+                            Collaborative approach
+                        </li>
+                        <li class="flex items-center text-gray-300">
+                            <i class="fas fa-check text-orange-500 mr-2"></i>
+                            Always helpful attitude
+                        </li>
+                        <li class="flex items-center text-gray-300">
+                            <i class="fas fa-check text-orange-500 mr-2"></i>
+                            Team-oriented mindset
+                        </li>
+                    </ul>
+                </div>
+    
+                <!-- Professional Traits -->
+                <div class="bg-gray-900 p-6 rounded-lg transform hover:scale-105 transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-star text-orange-500 text-2xl mr-3"></i>
+                        <h3 class="text-xl font-bold text-white">Professional Traits</h3>
+                    </div>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-gray-300">
+                            <i class="fas fa-check text-orange-500 mr-2"></i>
+                            Product responsibility
+                        </li>
+                        <li class="flex items-center text-gray-300">
+                            <i class="fas fa-check text-orange-500 mr-2"></i>
+                            Proactive approach
+                        </li>
+                        <li class="flex items-center text-gray-300">
+                            <i class="fas fa-check text-orange-500 mr-2"></i>
+                            Open to discussions
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="certifications" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-white mb-4">Professional <span class="text-orange-500">Certifications</span></h2>
+                <div class="h-1 w-24 bg-orange-500 mx-auto"></div>
+            </div>
+    
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- AWS Certificate -->
+                <div class="bg-gray-800 rounded-lg p-6 transform hover:scale-105 transition-all duration-300 group">
+                    <div class="relative mb-6">
+                        <img src="./assets/img/practitioner_cert.png" alt="AWS Cloud Practitioner" 
+                             class="w-full h-48 object-contain rounded-lg filter hover:brightness-110">
+                        <div class="absolute inset-0 bg-orange-500 opacity-0 group-hover:opacity-10 transition-opacity duration-300 rounded-lg"></div>
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-xl font-bold text-white mb-2">AWS Cloud Practitioner</h3>
+                        <p class="text-gray-400 mb-4">Amazon Web Services</p>
+                        <div class="flex items-center justify-center space-x-4">
+                            <span class="text-orange-500">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span class="ml-2">2023</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- GitOps Fundamentals -->
+                <div class="bg-gray-800 rounded-lg p-6 transform hover:scale-105 transition-all duration-300 group">
+                    <div class="relative mb-6">
+                        <img src="./assets/img/gitops_fundamentals_cert.png" alt="GitOps Fundamentals" 
+                             class="w-full h-48 object-contain rounded-lg filter hover:brightness-110">
+                        <div class="absolute inset-0 bg-orange-500 opacity-0 group-hover:opacity-10 transition-opacity duration-300 rounded-lg"></div>
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-xl font-bold text-white mb-2">GitOps Fundamentals</h3>
+                        <p class="text-gray-400 mb-4">Codefresh</p>
+                        <div class="flex items-center justify-center space-x-4">
+                            <span class="text-orange-500">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span class="ml-2">2023</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- GitOps at Scale -->
+                <div class="bg-gray-800 rounded-lg p-6 transform hover:scale-105 transition-all duration-300 group">
+                    <div class="relative mb-6">
+                        <img src="./assets/img/gitops_at_scale_cert.png" alt="GitOps at Scale" 
+                             class="w-full h-48 object-contain rounded-lg filter hover:brightness-110">
+                        <div class="absolute inset-0 bg-orange-500 opacity-0 group-hover:opacity-10 transition-opacity duration-300 rounded-lg"></div>
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-xl font-bold text-white mb-2">GitOps at Scale</h3>
+                        <p class="text-gray-400 mb-4">Codefresh</p>
+                        <div class="flex items-center justify-center space-x-4">
+                            <span class="text-orange-500">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span class="ml-2">2023</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="conclusion" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-4xl font-bold text-white mb-8">
+                    Let's <span class="text-orange-500">Connect</span>
+                </h2>
+                
+                <div class="space-y-6 text-gray-300 text-lg">
+                    <p>
+                        Thank you for taking the time to explore my portfolio. As a DevOps Engineer and Entrepreneur, 
+                        I'm passionate about creating efficient, scalable solutions and helping businesses thrive 
+                        through technology.
+                    </p>
+                    
+                    <p>
+                        Whether you're looking for a DevOps consultant, interested in cloud solutions, 
+                        or want to discuss potential collaborations, I'm always open to new opportunities 
+                        and challenges.
+                    </p>
+    
+                    <div class="pt-8">
+                        <button onclick="Calendly.initPopupWidget({url: 'https://calendly.com/christofher-kost/collaboration'});return false;"
+                                class="inline-flex items-center bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 px-8 rounded-full transition duration-300">
+                            <span>Get in Touch</span>
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </button>
+                    </div>
+    
+                    <div class="pt-8 flex justify-center space-x-6">
+                        <a href="https://github.com/KostLinux" target="_blank" rel="noopener noreferrer" 
+                           class="text-gray-400 hover:text-orange-500 transition-colors duration-300">
+                            <i class="fab fa-github text-2xl"></i>
                         </a>
-                        <a href="./assets/img/certs/certificate-gitops-fundamentals.pdf" target="_blank">
-                            <img src="./assets/img/certs/gitops_fundamentals_cert.png" class="w-24 h-24 m-2">
+                        <a href="https://www.linkedin.com/in/christofher-kost/" target="_blank" rel="noopener noreferrer" 
+                           class="text-gray-400 hover:text-orange-500 transition-colors duration-300">
+                            <i class="fab fa-linkedin text-2xl"></i>
                         </a>
-                        <a href="./assets/img/certs/certificate-gitops-at-scale.pdf" target="_blank">
-                            <img src="./assets/img/certs/gitops_at_scale_cert.png" class="w-24 h-24 m-2">
+                        <a href="mailto:christofher.kost@gmail.com" 
+                           class="text-gray-400 hover:text-orange-500 transition-colors duration-300">
+                            <i class="fas fa-envelope text-2xl"></i>
                         </a>
                     </div>
                 </div>
             </div>
-        </section>
-        <section id="Skills" class="pt-28 pb-20">
-            <div class="container mx-auto px-4 sm:px-10 md:px-20 custom-font-color">
-                <h1 class="text-4xl font-bold mb-20 text-center">Skills</h1>
-                <div class="flex flex-wrap justify-center">
-                    <!-- SRE and DevOps -->
-                    <div class="w-full sm:w-1/2 lg:w-1/3 px-4 mb-8 sm:mb-0">
-                        <div class="text-center">
-                            <i class="fas fa-tools text-6xl text-transparent bg-clip-text bg-gradient-to-r from-emerald-700 via-indigo-700 to-purple-900 mb-4"></i>
-                            <h3 class="text-2xl font-semibold mb-2">Engineering Expertise</h3>
-                            <p class="text-gray-600">Extensive experience in Engineering ensuring reliable, fast and cost efficient systems</p>
-                        </div>
-                    </div>
-                    <!-- Software Development -->
-                    <div class="w-full sm:w-1/2 lg:w-1/3 px-4 mb-8 sm:mb-0">
-                        <div class="text-center">
-                            <i class="fas fa-code text-6xl text-transparent bg-clip-text bg-gradient-to-r from-emerald-700 via-indigo-700 to-purple-900 mb-4"></i>
-                            <h3 class="text-xl font-semibold mb-2">Automation Expert</h3>
-                            <p class="text-gray-600">Proficient in creating different kind of automations, REST API's, software</p>
-                        </div>
-                    </div>
-                    <!-- Contributor -->
-                    <div class="w-full sm:w-1/2 lg:w-1/3 px-4 mb-8 sm:mb-0">
-                        <div class="text-center">
-                            <i class="fas fa-code-branch text-6xl text-transparent bg-clip-text bg-gradient-to-r from-emerald-700 via-indigo-700 to-purple-900 mb-4"></i>
-                            <h3 class="text-xl font-semibold mb-2">Open Source Contributor</h3>
-                            <p class="text-gray-600">Contributing to various open source projects, including the Golang framework Gin</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex flex-wrap justify-center mt-8">
-                    <!-- Leadership and Mentorship -->
-                    <div class="w-full sm:w-1/2 lg:w-1/3 px-4 mb-8 sm:mb-0">
-                        <div class="text-center">
-                            <i class="fas fa-chalkboard-teacher text-6xl text-transparent bg-clip-text bg-gradient-to-r from-emerald-700 via-indigo-700 to-purple-900 mb-4"></i>
-                            <h3 class="text-xl font-semibold mb-2">Leadership & Mentorship</h3>
-                            <p class="text-gray-600">Helping team members grow and develop their skills through effective leadership and mentorship</p>
-                        </div>
-                    </div>
-                    <!-- Business Management -->
-                    <div class="w-full sm:w-1/2 lg:w-1/3 px-4 mb-8 sm:mb-0">
-                        <div class="text-center">
-                            <i class="fas fa-briefcase text-6xl text-transparent bg-clip-text bg-gradient-to-r from-emerald-700 via-indigo-700 to-purple-900 mb-4"></i>
-                            <h3 class="text-xl font-semibold mb-2">Business Management</h3>
-                            <p class="text-gray-600">Handling administrative tasks, managing costs, and securing investments</p>
-                        </div>
-                    </div>
-                </div>
+        </div>
+    </section>
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="fixed bottom-8 right-8 bg-orange-500 hover:bg-orange-600 text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center transition-all duration-300 opacity-0 invisible">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <footer class="bg-gray-900 py-12">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <p class="text-gray-400" id="copyright"></p>
             </div>
-        </section>
-        <!-- Experience -->
-        <section id="Experience" class="pt-28 pb-20">
-            <div class="container mx-auto px-4 sm:px-10 md:px-20 custom-font-color">
-                <h1 class="text-4xl font-bold mb-20 text-center">Experience</h1>
-                <div id="experienceContent">
-                    <!-- Experience content will be inserted here by the JavaScript -->
-                </div>
-            </div>
-        </section>
-        <!-- Footer -->
-        <footer class="bottom-0 custom-font-color p-6 text-center">
-            <section id="footer" class="pt-16">
-                <div class="container mx-auto px-4 sm:px-10 md:px-20 custom-font-color">
-                    <h1 class="text-2xl font-bold text-center mb-10">Thanks for reading my portfolio!</h1>
-                </div>
-            </section>
-            <p>&copy; 2024 Christofher. All rights reserved.</p>
-        </footer>
-    </body>
+        </div>
+    </footer>
+</body>
 </html>
