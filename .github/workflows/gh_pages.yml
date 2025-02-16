@@ -2,7 +2,7 @@ name: Install and Deploy page
 on:
   push:
     branches:
-      - main  # replace with your default branch if not 'main'
+      - main
 
 jobs:
   install-and-deploy:
