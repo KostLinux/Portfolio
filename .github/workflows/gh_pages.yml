@@ -23,7 +23,7 @@ jobs:
       statuses: write
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
